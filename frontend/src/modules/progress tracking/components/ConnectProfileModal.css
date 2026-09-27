@@ -1,0 +1,280 @@
+/* =========================================================
+   MODAL OVERLAY
+========================================================= */
+
+.connect-modal-overlay {
+  position: fixed;
+  inset: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  background: rgba(15, 23, 18, 0.48);
+  backdrop-filter: blur(4px);
+
+  z-index: 1000;
+
+  animation: connectModalFadeIn 0.18s ease;
+}
+
+
+/* =========================================================
+   MODAL BOX
+========================================================= */
+
+.connect-modal-box {
+  width: 380px;
+  max-width: 100%;
+
+  background: #ffffff;
+
+  border: 1px solid #e4ebe6;
+  border-radius: 16px;
+
+  padding: 24px;
+
+  box-sizing: border-box;
+
+  box-shadow: 0 20px 55px rgba(20, 83, 45, 0.16);
+
+  animation: connectModalSlideUp 0.2s ease;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.connect-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+
+  margin-bottom: 22px;
+}
+
+.connect-modal-header h3 {
+  margin: 0;
+
+  color: #17251c;
+
+  font-size: 19px;
+  font-weight: 700;
+
+  line-height: 1.3;
+}
+
+
+/* =========================================================
+   CLOSE BUTTON
+========================================================= */
+
+.connect-modal-close {
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  background: #f5f7f5;
+
+  border: 1px solid #e5eae6;
+  border-radius: 8px;
+
+  color: #667169;
+
+  font-size: 14px;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.connect-modal-close:hover {
+  background: #eaf7ed;
+  border-color: #cce5d2;
+  color: #15803d;
+
+  transform: rotate(3deg);
+}
+
+
+/* =========================================================
+   LABEL
+========================================================= */
+
+.connect-modal-box label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #344139;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   INPUT
+========================================================= */
+
+.connect-modal-box input {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 12px 13px;
+
+  background: #fbfdfb;
+
+  border: 1px solid #d8e0da;
+  border-radius: 9px;
+
+  color: #17251c;
+
+  font-family: inherit;
+  font-size: 14px;
+
+  margin-bottom: 18px;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.connect-modal-box input::placeholder {
+  color: #a0aaa3;
+}
+
+.connect-modal-box input:hover {
+  border-color: #bfd2c3;
+}
+
+.connect-modal-box input:focus {
+  outline: none;
+
+  background: #ffffff;
+
+  border-color: #16a34a;
+
+  box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.10);
+}
+
+
+/* =========================================================
+   SUBMIT BUTTON
+========================================================= */
+
+.connect-modal-submit-btn {
+  width: 100%;
+
+  padding: 11px 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 9px;
+
+  background: #16a34a;
+  color: #ffffff;
+
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.connect-modal-submit-btn:hover {
+  background: #15803d;
+
+  box-shadow: 0 6px 15px rgba(22, 163, 74, 0.20);
+
+  transform: translateY(-1px);
+}
+
+.connect-modal-submit-btn:active {
+  transform: translateY(0);
+}
+
+.connect-modal-submit-btn:disabled {
+  opacity: 0.55;
+
+  cursor: not-allowed;
+
+  box-shadow: none;
+  transform: none;
+}
+
+
+/* =========================================================
+   ANIMATIONS
+========================================================= */
+
+@keyframes connectModalFadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes connectModalSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+  .connect-modal-overlay {
+    padding: 16px;
+  }
+
+  .connect-modal-box {
+    padding: 20px;
+
+    border-radius: 14px;
+  }
+
+  .connect-modal-header {
+    margin-bottom: 19px;
+  }
+
+  .connect-modal-header h3 {
+    font-size: 17px;
+  }
+}

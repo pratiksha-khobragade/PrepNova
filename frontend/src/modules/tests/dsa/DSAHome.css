@@ -1,0 +1,1461 @@
+/* =========================================================
+   PREPNOVA DSA - PHASE 1
+   ========================================================= */
+
+.dsa-page {
+  min-height: 100vh;
+  width: 100%;
+
+  background: #f5f8f6;
+  color: #18231e;
+
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+}
+
+
+/* =========================================================
+   MAIN
+   Existing sidebar width = 245px
+   ========================================================= */
+
+.dsa-main {
+  width: calc(100% - 245px);
+  min-height: 100vh;
+
+  margin-left: 245px;
+}
+
+
+/* =========================================================
+   TOPBAR
+   ========================================================= */
+
+.dsa-topbar {
+  width: 100%;
+  height: 78px;
+
+  padding: 0 34px;
+
+  background: rgba(255, 255, 255, 0.96);
+
+  border-bottom: 1px solid #e9efeb;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: sticky;
+  top: 0;
+
+  z-index: 50;
+}
+
+
+/* =========================================================
+   TOPBAR SEARCH
+   ========================================================= */
+
+.dsa-topbar-search {
+  width: 350px;
+  height: 40px;
+
+  padding: 0 12px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+
+  border: 1px solid #e8edea;
+  border-radius: 10px;
+
+  background: #fafcfb;
+
+  color: #88938d;
+}
+
+.dsa-topbar-search svg {
+  font-size: 12px;
+}
+
+.dsa-topbar-search input {
+  flex: 1;
+
+  min-width: 0;
+
+  border: 0;
+  outline: 0;
+
+  background: transparent;
+
+  color: #25332c;
+
+  font-size: 12px;
+}
+
+.dsa-topbar-search input::placeholder {
+  color: #a7afaa;
+}
+
+.dsa-topbar-search small {
+  padding: 4px 7px;
+
+  border-radius: 5px;
+
+  background: #eef2ef;
+
+  color: #89928d;
+
+  font-size: 9px;
+}
+
+
+/* =========================================================
+   TOPBAR USER
+   ========================================================= */
+
+.dsa-topbar-user {
+  height: 44px;
+
+  padding-left: 13px;
+
+  margin-left: 8px;
+
+  border-left: 1px solid #e7ece9;
+
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+}
+
+.dsa-user-avatar {
+  width: 34px;
+  height: 34px;
+
+  border-radius: 50%;
+
+  background: #dff1e8;
+  color: #137451;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.dsa-user-details {
+  display: flex;
+  flex-direction: column;
+
+  gap: 2px;
+}
+
+.dsa-user-details strong {
+  font-size: 11px;
+}
+
+.dsa-user-details span {
+  color: #9aa39e;
+
+  font-size: 9px;
+}
+
+.dsa-user-arrow {
+  color: #9aa39e;
+
+  font-size: 11px;
+}
+
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+.dsa-content {
+  width: 100%;
+  max-width: 1600px;
+
+  margin: 0 auto;
+
+  padding: 30px 34px 50px;
+}
+
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.dsa-heading {
+  margin-bottom: 22px;
+}
+
+.dsa-eyebrow {
+  margin: 0 0 6px;
+
+  color: #17805d;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  letter-spacing: 1px;
+}
+
+.dsa-heading h1 {
+  margin: 0;
+
+  color: #18231e;
+
+  font-size: 27px;
+  line-height: 1.2;
+
+  letter-spacing: -0.7px;
+}
+
+.dsa-heading-description {
+  max-width: 650px;
+
+  margin: 8px 0 0;
+
+  color: #89948e;
+
+  font-size: 12px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   PROGRESS SECTION
+   ========================================================= */
+
+.dsa-progress-section {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(270px, 1.6fr)
+    repeat(5, minmax(95px, 0.7fr));
+
+  gap: 10px;
+
+  margin-bottom: 30px;
+}
+
+
+/* Main progress card */
+
+.dsa-progress-main {
+  min-width: 0;
+
+  min-height: 118px;
+
+  padding: 18px;
+
+  border-radius: 14px;
+
+  background: #147653;
+  color: #ffffff;
+
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+
+  box-shadow:
+    0 7px 20px rgba(19, 118, 83, 0.12);
+}
+
+.dsa-progress-icon {
+  width: 42px;
+  height: 42px;
+
+  flex-shrink: 0;
+
+  border-radius: 12px;
+
+  background: rgba(255, 255, 255, 0.14);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 17px;
+}
+
+.dsa-progress-main-content {
+  flex: 1;
+
+  min-width: 0;
+}
+
+.dsa-progress-label {
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: rgba(255, 255, 255, 0.7);
+
+  font-size: 8px;
+  font-weight: 800;
+
+  letter-spacing: 1px;
+}
+
+.dsa-progress-value-row {
+  display: flex;
+  align-items: baseline;
+
+  gap: 7px;
+}
+
+.dsa-progress-value-row strong {
+  font-size: 24px;
+
+  line-height: 1;
+}
+
+.dsa-progress-value-row strong span {
+  color: rgba(255, 255, 255, 0.55);
+
+  font-size: 14px;
+}
+
+.dsa-progress-value-row > span {
+  color: rgba(255, 255, 255, 0.7);
+
+  font-size: 9px;
+}
+
+.dsa-progress-bar {
+  width: 100%;
+  height: 5px;
+
+  margin-top: 13px;
+
+  overflow: hidden;
+
+  border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.dsa-progress-bar-fill {
+  height: 100%;
+
+  border-radius: inherit;
+
+  background: #ffffff;
+
+  transition: width 0.3s ease;
+}
+
+
+/* Small progress cards */
+
+.dsa-progress-stat {
+  min-width: 0;
+  min-height: 118px;
+
+  padding: 15px;
+
+  border: 1px solid #e9efeb;
+
+  border-radius: 14px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 5px 18px rgba(32, 54, 43, 0.035);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 10px;
+}
+
+.dsa-progress-stat-icon {
+  width: 28px;
+  height: 28px;
+
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 11px;
+}
+
+.dsa-progress-stat-icon.easy {
+  background: #e8f5ee;
+  color: #147653;
+}
+
+.dsa-progress-stat-icon.medium {
+  background: #f8f2e5;
+  color: #b47b24;
+}
+
+.dsa-progress-stat-icon.hard {
+  background: #f5eaea;
+  color: #b45757;
+}
+
+.dsa-progress-stat-icon.streak {
+  background: #fff0e4;
+  color: #d67b2d;
+}
+
+.dsa-progress-stat-icon.accuracy {
+  background: #e8f5ee;
+  color: #147653;
+}
+
+.dsa-progress-stat > div:last-child {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+.dsa-progress-stat span {
+  color: #8c9791;
+
+  font-size: 9px;
+}
+
+.dsa-progress-stat strong {
+  overflow: hidden;
+
+  color: #1d2a24;
+
+  font-size: 17px;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+
+/* =========================================================
+   PROBLEM SECTION HEADING
+   ========================================================= */
+
+.dsa-problems-heading {
+  margin-bottom: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dsa-section-title-row {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+}
+
+.dsa-section-title-row h2 {
+  margin: 0;
+
+  color: #18231e;
+
+  font-size: 18px;
+
+  letter-spacing: -0.3px;
+}
+
+.dsa-problem-count {
+  padding: 4px 8px;
+
+  border-radius: 6px;
+
+  background: #e7f5ee;
+  color: #167653;
+
+  font-size: 8px;
+  font-weight: 800;
+}
+
+.dsa-problems-heading p {
+  margin: 5px 0 0;
+
+  color: #9aa39e;
+
+  font-size: 10px;
+}
+
+
+/* =========================================================
+   FILTER BAR
+   ========================================================= */
+
+.dsa-filter-bar {
+  width: 100%;
+
+  padding: 13px;
+
+  border: 1px solid #e8efeb;
+  border-radius: 12px;
+
+  background: #ffffff;
+
+  display: flex;
+  align-items: flex-end;
+
+  gap: 10px;
+
+  box-shadow:
+    0 4px 14px rgba(32, 54, 43, 0.025);
+}
+
+
+/* Search */
+
+.dsa-filter-search {
+  flex: 1;
+
+  min-width: 190px;
+
+  height: 39px;
+
+  padding: 0 11px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  border: 1px solid #e4ebe7;
+  border-radius: 8px;
+
+  background: #fafcfb;
+
+  color: #8d9892;
+}
+
+.dsa-filter-search svg {
+  font-size: 11px;
+}
+
+.dsa-filter-search input {
+  width: 100%;
+
+  border: 0;
+  outline: 0;
+
+  background: transparent;
+
+  color: #26332d;
+
+  font-size: 11px;
+}
+
+.dsa-filter-search input::placeholder {
+  color: #a5ada8;
+}
+
+
+/* Select controls */
+
+.dsa-filter-control {
+  min-width: 125px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+.dsa-filter-control label {
+  padding-left: 2px;
+
+  color: #87928c;
+
+  font-size: 8px;
+  font-weight: 700;
+}
+
+.dsa-filter-control select {
+  width: 100%;
+  height: 39px;
+
+  padding: 0 10px;
+
+  border: 1px solid #e4ebe7;
+  border-radius: 8px;
+
+  outline: 0;
+
+  background: #ffffff;
+
+  color: #4e5c54;
+
+  font-size: 10px;
+
+  cursor: pointer;
+}
+
+.dsa-filter-control select:focus,
+.dsa-filter-search:focus-within {
+  border-color: #9bcbb5;
+
+  box-shadow:
+    0 0 0 3px rgba(22, 118, 83, 0.06);
+}
+
+
+/* Reset */
+
+.dsa-reset-button {
+  height: 39px;
+
+  padding: 0 12px;
+
+  border: 1px solid #e0e9e4;
+  border-radius: 8px;
+
+  background: #ffffff;
+  color: #637069;
+
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.dsa-reset-button:hover {
+  border-color: #afd1bf;
+
+  color: #147653;
+
+  background: #f4faf7;
+}
+
+
+/* =========================================================
+   FILTER INFO
+   ========================================================= */
+
+.dsa-filter-info {
+  min-height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+}
+
+.dsa-filter-info > div {
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+
+  color: #9aa39e;
+
+  font-size: 9px;
+}
+
+.dsa-filter-info svg {
+  color: #167653;
+}
+
+.dsa-filter-info button {
+  border: 0;
+
+  background: transparent;
+
+  color: #167653;
+
+  font-size: 9px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+
+/* =========================================================
+   PROBLEM LIST
+   ========================================================= */
+
+.dsa-problem-list {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 9px;
+}
+
+
+/* =========================================================
+   PROBLEM CARD
+   ========================================================= */
+
+.dsa-problem-card {
+  width: 100%;
+
+  min-height: 105px;
+
+  padding: 16px 17px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+
+  border: 1px solid #e7eeea;
+  border-radius: 13px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 4px 14px rgba(32, 54, 43, 0.025);
+
+  transition:
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.dsa-problem-card:hover {
+  border-color: #bcdacb;
+
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 7px 20px rgba(32, 54, 43, 0.055);
+}
+
+
+/* Problem number */
+
+.dsa-problem-number {
+  width: 34px;
+
+  flex-shrink: 0;
+
+  color: #a1aaa5;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  text-align: center;
+}
+
+
+/* Main */
+
+.dsa-problem-main {
+  flex: 1;
+
+  min-width: 0;
+}
+
+.dsa-problem-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 12px;
+}
+
+.dsa-problem-title-wrapper {
+  min-width: 0;
+
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+}
+
+.dsa-problem-title-wrapper h3 {
+  margin: 0;
+
+  overflow: hidden;
+
+  color: #1b2922;
+
+  font-size: 13px;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.dsa-solved-label {
+  flex-shrink: 0;
+
+  display: inline-flex;
+  align-items: center;
+
+  gap: 4px;
+
+  color: #17805d;
+
+  font-size: 8px;
+  font-weight: 700;
+}
+
+.dsa-solved-label svg {
+  font-size: 8px;
+}
+
+
+/* Description */
+
+.dsa-problem-description {
+  max-width: 800px;
+
+  margin: 6px 0 9px;
+
+  overflow: hidden;
+
+  color: #919b95;
+
+  font-size: 9px;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+
+/* =========================================================
+   DIFFICULTY BADGE
+   ========================================================= */
+
+.dsa-difficulty-badge {
+  flex-shrink: 0;
+
+  padding: 5px 8px;
+
+  border-radius: 6px;
+
+  font-size: 8px;
+  font-weight: 800;
+}
+
+.dsa-difficulty-badge.easy {
+  background: #e8f5ee;
+  color: #167653;
+}
+
+.dsa-difficulty-badge.medium {
+  background: #fbf2df;
+  color: #a87522;
+}
+
+.dsa-difficulty-badge.hard {
+  background: #f7e9e9;
+  color: #b15353;
+}
+
+
+/* =========================================================
+   TOPICS
+   ========================================================= */
+
+.dsa-problem-topics {
+  display: flex;
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  gap: 5px;
+}
+
+.dsa-topic-badge {
+  padding: 4px 7px;
+
+  border: 1px solid #e4ebe7;
+  border-radius: 5px;
+
+  background: #f8faf9;
+
+  color: #6f7b74;
+
+  font-size: 8px;
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   SOLVE BUTTON
+   ========================================================= */
+
+.dsa-solve-button {
+  min-width: 86px;
+  height: 35px;
+
+  flex-shrink: 0;
+
+  padding: 0 10px;
+
+  border: 1px solid #d8e7df;
+  border-radius: 8px;
+
+  background: #ffffff;
+  color: #167653;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 6px;
+
+  font-size: 9px;
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.dsa-solve-button:hover {
+  background: #167653;
+
+  border-color: #167653;
+
+  color: #ffffff;
+
+  box-shadow:
+    0 5px 12px rgba(22, 118, 83, 0.13);
+}
+
+.dsa-solve-button > svg:first-child {
+  font-size: 9px;
+}
+
+.dsa-solve-arrow {
+  font-size: 8px;
+
+  transition: transform 0.2s ease;
+}
+
+.dsa-solve-button:hover .dsa-solve-arrow {
+  transform: translateX(2px);
+}
+
+
+/* =========================================================
+   EMPTY STATE
+   ========================================================= */
+
+.dsa-empty-state {
+  min-height: 280px;
+
+  padding: 35px 20px;
+
+  border: 1px dashed #d7e3dd;
+  border-radius: 14px;
+
+  background: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.dsa-empty-icon {
+  width: 46px;
+  height: 46px;
+
+  margin-bottom: 13px;
+
+  border-radius: 13px;
+
+  background: #e8f5ef;
+  color: #167653;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 17px;
+}
+
+.dsa-empty-state h3 {
+  margin: 0;
+
+  color: #26332d;
+
+  font-size: 14px;
+}
+
+.dsa-empty-state p {
+  max-width: 380px;
+
+  margin: 7px 0 16px;
+
+  color: #9aa39e;
+
+  font-size: 10px;
+
+  line-height: 1.6;
+}
+
+.dsa-empty-state button {
+  padding: 9px 14px;
+
+  border: 0;
+  border-radius: 8px;
+
+  background: #167653;
+  color: #ffffff;
+
+  font-size: 9px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1250px) {
+
+  .dsa-progress-section {
+    grid-template-columns:
+      minmax(250px, 1.5fr)
+      repeat(3, minmax(100px, 1fr));
+  }
+
+  .dsa-progress-stat:nth-child(5),
+  .dsa-progress-stat:nth-child(6) {
+    display: none;
+  }
+
+}
+
+
+@media (max-width: 1050px) {
+
+  .dsa-content {
+    padding: 26px 24px 40px;
+  }
+
+  .dsa-topbar {
+    padding: 0 24px;
+  }
+
+  .dsa-progress-section {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .dsa-progress-main {
+    grid-column: span 2;
+  }
+
+  .dsa-progress-stat:nth-child(5),
+  .dsa-progress-stat:nth-child(6) {
+    display: flex;
+  }
+
+  .dsa-filter-bar {
+    flex-wrap: wrap;
+  }
+
+  .dsa-filter-search {
+    min-width: 100%;
+
+    flex: none;
+  }
+
+  .dsa-filter-control {
+    flex: 1;
+  }
+
+}
+
+
+@media (max-width: 900px) {
+
+  .dsa-main {
+    width: calc(100% - 220px);
+
+    margin-left: 220px;
+  }
+
+  .dsa-problem-card {
+    align-items: flex-start;
+  }
+
+  .dsa-problem-number {
+    width: 28px;
+  }
+
+}
+
+
+@media (max-width: 700px) {
+
+  .dsa-main {
+    width: 100%;
+
+    margin-left: 0;
+  }
+
+  .dsa-topbar {
+    height: 68px;
+
+    padding: 0 16px;
+  }
+
+  .dsa-topbar-search {
+    width: 220px;
+  }
+
+  .dsa-user-details,
+  .dsa-user-arrow {
+    display: none;
+  }
+
+  .dsa-content {
+    padding: 20px 16px 35px;
+  }
+
+  .dsa-heading h1 {
+    font-size: 22px;
+  }
+
+  .dsa-progress-section {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .dsa-progress-main {
+    grid-column: span 2;
+  }
+
+  .dsa-filter-control {
+    min-width: calc(50% - 5px);
+  }
+
+  .dsa-reset-button {
+    flex: 1;
+  }
+
+  .dsa-problem-card {
+    flex-wrap: wrap;
+
+    gap: 10px;
+  }
+
+  .dsa-problem-number {
+    width: auto;
+  }
+
+  .dsa-problem-main {
+    width: calc(100% - 44px);
+
+    flex: none;
+  }
+
+  .dsa-solve-button {
+    width: 100%;
+  }
+
+}
+
+
+@media (max-width: 500px) {
+
+  .dsa-topbar-search {
+    width: 100%;
+  }
+
+  .dsa-topbar-user {
+    display: none;
+  }
+
+  .dsa-progress-section {
+    grid-template-columns: 1fr;
+  }
+
+  .dsa-progress-main {
+    grid-column: auto;
+  }
+
+  .dsa-filter-bar {
+    align-items: stretch;
+  }
+
+  .dsa-filter-control {
+    min-width: 100%;
+  }
+
+  .dsa-reset-button {
+    width: 100%;
+  }
+
+  .dsa-problem-title-row {
+    align-items: flex-start;
+    flex-direction: column;
+
+    gap: 6px;
+  }
+
+  .dsa-problem-description {
+    white-space: normal;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+  }
+
+  .dsa-section-title-row {
+    align-items: flex-start;
+    flex-direction: column;
+
+    gap: 5px;
+  }
+
+}
+
+/* =========================================================
+   DSA PROBLEM CARDS
+========================================================= */
+
+.dsa-problem-card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 20px;
+  background: #ffffff;
+  border: 1px solid #e2e9e6;
+  border-radius: 14px;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+}
+
+.dsa-problem-card:hover {
+  border-color: #b9d9cd;
+  box-shadow: 0 8px 24px rgba(22, 118, 83, 0.08);
+  transform: translateY(-2px);
+}
+
+/* Status */
+
+.problem-status {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.solved-icon,
+.unsolved-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+}
+
+.solved-icon {
+  background: #eaf7f1;
+  color: #167653;
+}
+
+.unsolved-icon {
+  background: #f2f5f4;
+  color: #7a8984;
+}
+
+/* Problem information */
+
+.problem-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.problem-title-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 7px;
+}
+
+.problem-title-row h3 {
+  margin: 0;
+  color: #17211f;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.problem-description {
+  margin: 0 0 12px;
+  color: #687873;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* Difficulty */
+
+.difficulty-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 9px;
+  border-radius: 6px;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.difficulty-badge.easy {
+  color: #167653;
+  background: #eaf7f1;
+}
+
+.difficulty-badge.medium {
+  color: #9a6500;
+  background: #fff6df;
+}
+
+.difficulty-badge.hard {
+  color: #b33b3b;
+  background: #fff0f0;
+}
+
+/* Topics */
+
+.problem-topics {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.topic-tag {
+  padding: 5px 9px;
+  background: #f4f7f6;
+  border: 1px solid #e3e9e6;
+  border-radius: 6px;
+  color: #667570;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+/* Action */
+
+.problem-action {
+  flex-shrink: 0;
+}
+
+.solve-problem-btn {
+  min-width: 110px;
+  height: 38px;
+  padding: 0 13px;
+  border: 1px solid #c4dcd2;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #167653;
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.solve-problem-btn:hover {
+  background: #167653;
+  border-color: #167653;
+  color: #ffffff;
+}
+
+.solve-problem-btn svg {
+  font-size: 11px;
+  transition: transform 0.2s ease;
+}
+
+.solve-problem-btn:hover svg {
+  transform: translateX(3px);
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 700px) {
+  .dsa-problem-card {
+    align-items: flex-start;
+    gap: 12px;
+    padding: 16px;
+  }
+
+  .problem-status {
+    padding-top: 2px;
+  }
+
+  .solved-icon,
+  .unsolved-icon {
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    font-size: 13px;
+  }
+
+  .problem-title-row h3 {
+    font-size: 14px;
+  }
+
+  .problem-description {
+    font-size: 12px;
+  }
+
+  .problem-action {
+    display: none;
+  }
+}
+
+.dsa-history-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border: 1px solid #dbeafe;
+  border-radius: 10px;
+  background: #eff6ff;
+  color: #2563eb;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.dsa-history-button:hover {
+  background: #dbeafe;
+  border-color: #bfdbfe;
+  transform: translateY(-1px);
+}

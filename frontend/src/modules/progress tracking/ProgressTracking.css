@@ -1,0 +1,203 @@
+/* =========================================================
+   PROGRESS TRACKING PAGE
+========================================================= */
+
+.progress-tracking-page {
+  min-height: 100vh;
+  margin-left: 245px;
+  width: calc(100% - 245px);
+
+  box-sizing: border-box;
+
+  padding: 42px 48px 50px;
+
+  background: #f7faf8;
+  color: #263a32;
+}
+
+
+/* =========================================================
+   PAGE HEADER
+========================================================= */
+
+.progress-tracking-header {
+  max-width: 1100px;
+  margin: 0 auto 30px;
+}
+
+.progress-tracking-header h2 {
+  margin: 0 0 7px;
+
+  color: #173b2f;
+
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -0.6px;
+  line-height: 1.2;
+}
+
+.progress-tracking-header p {
+  margin: 0;
+
+  color: #7d8983;
+
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   PLATFORM GRID
+========================================================= */
+
+.progress-tracking-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 20px;
+}
+
+
+/* =========================================================
+   LOADING
+========================================================= */
+
+.progress-tracking-loading {
+  min-height: 100vh;
+
+  margin-left: 245px;
+  width: calc(100% - 245px);
+
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 40px;
+
+  background: #f7faf8;
+
+  color: #167653;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   ERROR
+========================================================= */
+
+.progress-tracking-error {
+  min-height: 100vh;
+
+  margin-left: 245px;
+  width: calc(100% - 245px);
+
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 40px;
+
+  background: #f7faf8;
+
+  color: #a64b4b;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1100px) {
+  .progress-tracking-page {
+    padding: 36px 32px 45px;
+  }
+
+  .progress-tracking-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+
+@media (max-width: 900px) {
+  .progress-tracking-page {
+    margin-left: 220px;
+    width: calc(100% - 220px);
+
+    padding: 32px 25px 40px;
+  }
+
+  .progress-tracking-loading,
+  .progress-tracking-error {
+    margin-left: 220px;
+    width: calc(100% - 220px);
+  }
+
+  .progress-tracking-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .progress-tracking-header h2 {
+    font-size: 27px;
+  }
+}
+
+
+@media (max-width: 700px) {
+  .progress-tracking-page {
+    margin-left: 0;
+    width: 100%;
+
+    padding: 28px 20px 35px;
+  }
+
+  .progress-tracking-loading,
+  .progress-tracking-error {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .progress-tracking-header {
+    margin-bottom: 24px;
+  }
+
+  .progress-tracking-header h2 {
+    font-size: 25px;
+  }
+
+  .progress-tracking-header p {
+    font-size: 11px;
+  }
+
+  .progress-tracking-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .progress-tracking-page {
+    padding: 24px 15px 30px;
+  }
+
+  .progress-tracking-header h2 {
+    font-size: 23px;
+  }
+
+  .progress-tracking-header p {
+    font-size: 11px;
+  }
+}

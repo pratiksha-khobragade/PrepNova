@@ -1,0 +1,844 @@
+/* =========================================================
+   PREPNOVA - FEATURES SECTION
+   White + Fresh Green + Black
+========================================================= */
+
+.features-section {
+  width: 100%;
+  padding: 110px 30px 130px;
+
+  background: #ffffff;
+  color: #111315;
+
+  overflow: hidden;
+
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+========================================================= */
+
+.features-container {
+  width: 100%;
+  max-width: 1240px;
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.features-heading {
+  max-width: 760px;
+
+  margin: 0 auto 85px;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   EYEBROW
+========================================================= */
+
+.features-eyebrow {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+
+  margin-bottom: 22px;
+
+  color: #159447;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 0.16em;
+}
+
+
+.eyebrow-line {
+  width: 28px;
+  height: 1px;
+
+  background: #8ed9a6;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.features-heading h2 {
+  margin: 0;
+
+  color: #111315;
+
+  font-size: clamp(40px, 5vw, 64px);
+
+  line-height: 1.05;
+
+  letter-spacing: -0.055em;
+
+  font-weight: 800;
+}
+
+
+.features-heading h2 span {
+  color: #28ad49;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.features-heading p {
+  max-width: 650px;
+
+  margin: 25px auto 0;
+
+  color: #737b76;
+
+  font-size: 15px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   FEATURE LIST
+========================================================= */
+
+.features-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 100px;
+}
+
+
+/* =========================================================
+   FEATURE SHOWCASE
+========================================================= */
+
+.feature-showcase {
+  width: 100%;
+
+  min-height: 530px;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.12fr)
+    minmax(380px, 0.88fr);
+
+  align-items: center;
+
+  gap: 70px;
+
+  padding: 34px;
+
+  position: relative;
+
+  background: #96e6b1;
+
+  border: 1px solid #000000;
+
+  border-radius: 32px;
+
+  box-shadow:
+    0 20px 60px rgba(156, 226, 178, 0.055);
+}
+
+
+/* =========================================================
+   REVERSE LAYOUT
+========================================================= */
+
+.feature-showcase-reverse {
+  grid-template-columns:
+    minmax(380px, 0.88fr)
+    minmax(0, 1.12fr);
+}
+
+
+.feature-showcase-reverse .feature-image-wrapper {
+  order: 2;
+}
+
+
+.feature-showcase-reverse .feature-content {
+  order: 1;
+}
+
+
+/* =========================================================
+   IMAGE AREA
+========================================================= */
+
+.feature-image-wrapper {
+  min-width: 0;
+
+  min-height: 440px;
+
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* =========================================================
+   IMAGE BACKGROUND GLOW
+========================================================= */
+
+.feature-image-glow {
+  width: 75%;
+  height: 75%;
+
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(56, 190, 89, 0.20) 0%,
+      rgba(56, 190, 89, 0.08) 45%,
+      rgba(56, 190, 89, 0) 75%
+    );
+
+  filter: blur(15px);
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   IMAGE CARD
+========================================================= */
+
+.feature-image-card {
+  width: 100%;
+  height: 440px;
+
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border: 1px solid #e1ebe4;
+
+  border-radius: 24px;
+
+  box-shadow:
+    0 18px 40px rgba(23, 49, 32, 0.08);
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.feature-image {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: contain;
+
+  object-position: center;
+
+  transition:
+    transform 0.45s ease;
+}
+
+
+.feature-showcase:hover .feature-image {
+  transform: scale(1.025);
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.feature-content {
+  max-width: 500px;
+
+  padding: 25px 20px;
+}
+
+
+/* =========================================================
+   TAG
+========================================================= */
+
+.feature-tag {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin-bottom: 20px;
+
+  color: #159447;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.13em;
+}
+
+
+.feature-tag-dot {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #2fba50;
+
+  box-shadow:
+    0 0 0 5px rgba(47, 186, 80, 0.10);
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.feature-content h3 {
+  margin: 0;
+
+  color: #111315;
+
+  font-size: clamp(38px, 4vw, 54px);
+
+  line-height: 1.02;
+
+  letter-spacing: -0.045em;
+
+  font-weight: 800;
+}
+
+
+/* =========================================================
+   SUBTITLE
+========================================================= */
+
+.feature-content h4 {
+  margin: 16px 0 0;
+
+  color: #28ad49;
+
+  font-size: 21px;
+
+  line-height: 1.3;
+
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.feature-content p {
+  max-width: 470px;
+
+  margin: 18px 0 0;
+
+  color: #313733;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   FEATURE POINTS
+========================================================= */
+
+.feature-points {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 12px 18px;
+
+  margin-top: 28px;
+}
+
+
+.feature-point {
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  color: #313733;
+
+  font-size: 13px;
+
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   CHECK
+========================================================= */
+
+.feature-check {
+  width: 21px;
+  height: 21px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #daf4e1;
+
+  color: #159447;
+
+  font-size: 12px;
+
+  font-weight: 900;
+}
+
+
+/* =========================================================
+   EXPLORE BUTTON
+========================================================= */
+
+.feature-arrow-button {
+  margin-top: 32px;
+
+  padding: 11px 17px 11px 19px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  border: 1px solid #cfe6d6;
+
+  border-radius: 999px;
+
+  background: #ffffff;
+
+  color: #147d3c;
+
+  font: inherit;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 7px 18px rgba(20, 100, 48, 0.06);
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+.feature-arrow-button:hover {
+  transform: translateY(-2px);
+
+  background: #eaf9ee;
+
+  border-color: #9bd6aa;
+
+  box-shadow:
+    0 10px 22px rgba(20, 100, 48, 0.10);
+}
+
+
+/* =========================================================
+   ARROW
+========================================================= */
+
+.arrow-icon {
+  width: 27px;
+  height: 27px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #35b94b;
+
+  color: #ffffff;
+
+  font-size: 15px;
+
+  line-height: 1;
+}
+
+
+/* =========================================================
+   LARGE DESKTOP
+========================================================= */
+
+@media (min-width: 1450px) {
+
+  .features-section {
+    padding-top: 130px;
+    padding-bottom: 150px;
+  }
+
+
+  .features-container {
+    max-width: 1320px;
+  }
+
+
+  .feature-showcase {
+    min-height: 570px;
+
+    padding: 42px;
+
+    gap: 90px;
+
+    border-radius: 36px;
+  }
+
+
+  .feature-image-wrapper {
+    min-height: 475px;
+  }
+
+
+  .feature-image-card {
+    height: 475px;
+  }
+}
+
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1100px) {
+
+  .features-section {
+    padding: 90px 24px 110px;
+  }
+
+
+  .features-list {
+    gap: 70px;
+  }
+
+
+  .feature-showcase,
+  .feature-showcase-reverse {
+    grid-template-columns:
+      minmax(0, 1fr)
+      minmax(330px, 0.9fr);
+
+    gap: 45px;
+
+    padding: 25px;
+  }
+
+
+  .feature-image-wrapper {
+    min-height: 380px;
+  }
+
+
+  .feature-image-card {
+    height: 380px;
+  }
+
+
+  .feature-content {
+    padding: 15px;
+  }
+
+
+  .feature-content h3 {
+    font-size: 42px;
+  }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 850px) {
+
+  .features-section {
+    padding: 80px 20px 90px;
+  }
+
+
+  .features-heading {
+    margin-bottom: 60px;
+  }
+
+
+  .features-heading h2 {
+    font-size: 44px;
+  }
+
+
+  .features-list {
+    gap: 50px;
+  }
+
+
+  .feature-showcase,
+  .feature-showcase-reverse {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 25px;
+
+    padding: 22px;
+
+    border-radius: 26px;
+  }
+
+
+  .feature-showcase-reverse .feature-image-wrapper {
+    order: 1;
+  }
+
+
+  .feature-showcase-reverse .feature-content {
+    order: 2;
+  }
+
+
+  .feature-image-wrapper {
+    width: 100%;
+
+    min-height: auto;
+  }
+
+
+  .feature-image-card {
+    width: 100%;
+
+    height: auto;
+
+    aspect-ratio: 16 / 9;
+
+    border-radius: 20px;
+  }
+
+
+  .feature-content {
+    width: 100%;
+
+    max-width: none;
+
+    padding: 15px 10px 20px;
+  }
+
+
+  .feature-content p {
+    max-width: 700px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .features-section {
+    padding: 65px 14px 75px;
+  }
+
+
+  .features-heading {
+    margin-bottom: 45px;
+  }
+
+
+  .features-eyebrow {
+    font-size: 9px;
+
+    letter-spacing: 0.12em;
+  }
+
+
+  .eyebrow-line {
+    width: 20px;
+  }
+
+
+  .features-heading h2 {
+    font-size: 36px;
+
+    line-height: 1.08;
+  }
+
+
+  .features-heading p {
+    margin-top: 18px;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+  }
+
+
+  .features-list {
+    gap: 35px;
+  }
+
+
+  .feature-showcase,
+  .feature-showcase-reverse {
+    padding: 15px;
+
+    border-radius: 21px;
+  }
+
+
+  .feature-image-card {
+    aspect-ratio: 1 / 0.72;
+
+    border-radius: 16px;
+  }
+
+
+  .feature-content {
+    padding: 10px 6px 15px;
+  }
+
+
+  .feature-tag {
+    margin-bottom: 15px;
+
+    font-size: 9px;
+  }
+
+
+  .feature-content h3 {
+    font-size: 34px;
+  }
+
+
+  .feature-content h4 {
+    margin-top: 11px;
+
+    font-size: 18px;
+  }
+
+
+  .feature-content p {
+    margin-top: 14px;
+
+    font-size: 13px;
+  }
+
+
+  .feature-points {
+    grid-template-columns: 1fr;
+
+    gap: 10px;
+
+    margin-top: 22px;
+  }
+
+
+  .feature-point {
+    font-size: 12px;
+  }
+
+
+  .feature-check {
+    width: 20px;
+    height: 20px;
+  }
+
+
+  .feature-arrow-button {
+    margin-top: 24px;
+
+    font-size: 12px;
+  }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+========================================================= */
+
+@media (max-width: 400px) {
+
+  .features-heading h2 {
+    font-size: 32px;
+  }
+
+
+  .feature-content h3 {
+    font-size: 30px;
+  }
+
+
+  .feature-content h4 {
+    font-size: 16px;
+  }
+
+
+  .feature-image-card {
+    aspect-ratio: 1 / 0.75;
+  }
+}

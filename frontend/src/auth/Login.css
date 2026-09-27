@@ -1,0 +1,395 @@
+/* =========================================================
+   PREPNOVA LOGIN PAGE
+
+   Black + Light Green Theme
+   ========================================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+.login-page {
+  min-height: 100vh;
+  width: 100%;
+  background: #f5f8f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* =========================================================
+   MAIN LOGIN CARD
+   ========================================================= */
+
+.login-container {
+  width: 100%;
+  max-width: 1150px;
+  min-height: 680px;
+  background: #ffffff;
+  border-radius: 22px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 48% 52%;
+  border: 1px solid #e7eee7;
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.1);
+}
+
+/* =========================================================
+   LEFT IMAGE SECTION
+   ========================================================= */
+
+.login-image-section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 680px;
+  background: #111511;
+  overflow: hidden;
+}
+
+.login-design-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* =========================================================
+   RIGHT LOGIN FORM SECTION
+   ========================================================= */
+
+.login-form-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  padding: 45px 60px;
+}
+
+.login-form-wrapper {
+  width: 100%;
+  max-width: 430px;
+}
+
+/* =========================================================
+   LOGO
+   ========================================================= */
+
+.login-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.login-logo img {
+  width: 145px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.login-heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.login-heading h1 {
+  margin: 0 0 8px;
+  color: #111511;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -0.7px;
+}
+
+.login-heading p {
+  margin: 0 auto;
+  max-width: 330px;
+  color: #777d78;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* =========================================================
+   LOGIN FORM
+   ========================================================= */
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Input Group */
+
+.login-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.login-input-group label {
+  color: #222722;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* =========================================================
+   INPUTS
+   ========================================================= */
+
+.login-input-group input {
+  width: 100%;
+  height: 45px;
+  padding: 0 14px;
+  border: 1px solid #dce4dc;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #171b17;
+  font-size: 13px;
+  outline: none;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.login-input-group input::placeholder {
+  color: #a3aaa4;
+}
+
+.login-input-group input:hover {
+  border-color: #b9c7bb;
+}
+
+.login-input-group input:focus {
+  border-color: #9bcf7b;
+  background: #fcfffb;
+  box-shadow:
+    0 0 0 3px rgba(155, 207, 123, 0.16);
+}
+
+/* =========================================================
+   PASSWORD INPUT
+   ========================================================= */
+
+.password-input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.password-input-wrapper input {
+  padding-right: 62px;
+}
+
+/* Show / Hide Button */
+
+.password-toggle {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  border: none;
+  background: transparent;
+  color: #557d38;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.password-toggle:hover {
+  color: #31521f;
+}
+
+/* =========================================================
+   LOGIN BUTTON
+   ========================================================= */
+
+.login-button {
+  width: 100%;
+  height: 46px;
+  margin-top: 3px;
+  border: none;
+  border-radius: 8px;
+  background: #b7e58f;
+  color: #111511;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.login-button:hover {
+  background: #a6db7c;
+  box-shadow:
+    0 7px 18px rgba(137, 185, 105, 0.2);
+  transform: translateY(-1px);
+}
+
+.login-button:active {
+  transform: translateY(0);
+}
+
+.login-button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* =========================================================
+   GOOGLE LOGIN SECTION
+   ========================================================= */
+
+.google-login-section {
+  width: 100%;
+  margin-top: 24px;
+}
+
+/* =========================================================
+   OR DIVIDER
+   ========================================================= */
+
+.google-divider {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 0 0 20px;
+}
+
+.google-divider::before,
+.google-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #e2e8e2;
+}
+
+.google-divider span {
+  flex-shrink: 0;
+  color: #9aa19b;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+
+/* =========================================================
+   GOOGLE BUTTON CONTAINER
+   ========================================================= */
+
+.google-login-section > div:last-child {
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+/* Google iframe/button */
+
+.google-login-section iframe {
+  max-width: 100%;
+}
+
+/* =========================================================
+   CREATE ACCOUNT LINK
+   ========================================================= */
+
+.signup-link-text {
+  margin: 24px 0 0;
+  text-align: center;
+  color: #858b86;
+  font-size: 11px;
+}
+
+.signup-link-text a {
+  color: #4f762f;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.signup-link-text a:hover {
+  color: #2f511b;
+  text-decoration: underline;
+}
+
+/* =========================================================
+   RESPONSIVE DESIGN
+   ========================================================= */
+
+@media (max-width: 900px) {
+  .login-container {
+    max-width: 620px;
+    grid-template-columns: 1fr;
+  }
+
+  .login-image-section {
+    display: none;
+  }
+
+  .login-form-section {
+    min-height: 680px;
+    padding: 45px 50px;
+  }
+}
+
+/* =========================================================
+   TABLET / MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+  .login-page {
+    padding: 15px;
+  }
+
+  .login-container {
+    min-height: auto;
+    border-radius: 16px;
+  }
+
+  .login-form-section {
+    padding: 40px 25px;
+  }
+
+  .login-heading h1 {
+    font-size: 26px;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 400px) {
+  .login-page {
+    padding: 10px;
+  }
+
+  .login-form-section {
+    padding: 30px 18px;
+  }
+
+  .login-logo img {
+    width: 130px;
+  }
+
+  .login-heading h1 {
+    font-size: 24px;
+  }
+
+  .google-divider {
+    gap: 10px;
+  }
+}

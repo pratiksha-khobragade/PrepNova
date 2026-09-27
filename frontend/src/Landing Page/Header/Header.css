@@ -1,0 +1,1078 @@
+/* =========================================================
+   PREPNOVA - LANDING PAGE HEADER
+   Clean • Spacious • Premium • Responsive
+   ========================================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+.landing-header {
+  width: 100%;
+  min-height: 760px;
+
+  background: #ffffff;
+  color: #111315;
+
+  overflow: hidden;
+
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+}
+
+
+/* =========================================================
+   NAVBAR
+   ========================================================= */
+
+.navbar {
+  width: calc(100% - 80px);
+  max-width: 1420px;
+  height: 76px;
+
+  margin: 16px auto 0;
+  padding: 0 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: sticky;
+  top: 16px;
+
+  z-index: 100;
+
+  background: rgba(255, 255, 255, 0.96);
+
+  border: 1px solid #eef1ee;
+
+  border-radius: 16px;
+
+  box-shadow:
+    0 12px 35px rgba(20, 30, 23, 0.07),
+    0 2px 8px rgba(20, 30, 23, 0.03);
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+
+/* =========================================================
+   LOGO
+   ========================================================= */
+
+.brand {
+  width: 175px;
+  height: 62px;
+
+  display: flex;
+  align-items: center;
+
+  text-decoration: none;
+}
+
+.brand-logo {
+  display: block;
+
+  width: 170px;
+  height: 70px;
+
+  object-fit: contain;
+  object-position: left center;
+}
+
+
+/* =========================================================
+   NAVIGATION BUTTONS
+   ========================================================= */
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.signin-btn,
+.get-started-btn,
+.primary-btn {
+  border: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+.signin-btn {
+  padding: 10px 3px;
+
+  background: transparent;
+
+  color: #111315;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  transition: color 0.2s ease;
+}
+
+.signin-btn:hover {
+  color: #31ad46;
+}
+
+.get-started-btn {
+  padding: 12px 24px;
+
+  background: #35b94b;
+
+  color: #ffffff;
+
+  border-radius: 999px;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  box-shadow:
+    0 8px 18px rgba(53, 185, 75, 0.18);
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.get-started-btn:hover {
+  background: #2eaa42;
+  transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.hero {
+  width: 100%;
+  max-width: 1500px;
+
+  min-height: 800px;
+
+  margin: 30px auto 0;
+
+  padding: 0 35px;
+
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* =========================================================
+   CENTER HERO CONTENT
+   ========================================================= */
+
+.hero-content {
+  width: min(690px, 100%);
+
+  position: relative;
+
+  z-index: 10;
+
+  text-align: center;
+
+  margin-top: -5px;
+}
+
+.eyebrow {
+  display: none !important;
+}
+
+
+/* =========================================================
+   MAIN HEADING
+   ========================================================= */
+
+.hero-content h1 {
+  margin: 0;
+
+  color: #111315;
+
+  font-size: clamp(52px, 5vw, 70px);
+
+  line-height: 1.05;
+
+  letter-spacing: -0.055em;
+
+  font-weight: 800;
+}
+
+.hero-content h1 span {
+  color: #31b649;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.hero-content p {
+  max-width: 610px;
+
+  margin: 24px auto 0;
+
+  color: #747a76;
+
+  font-size: 15px;
+
+  line-height: 1.65;
+}
+
+
+/* =========================================================
+   HERO BUTTON
+   ========================================================= */
+
+.hero-buttons {
+  margin-top: 24px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.primary-btn {
+  padding: 13px 28px;
+
+  border-radius: 999px;
+
+  background: #35b94b;
+
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  box-shadow:
+    0 8px 20px rgba(53, 185, 75, 0.18);
+
+  transition: all 0.25s ease;
+}
+
+.primary-btn:hover {
+  background: #2fa943;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 12px 25px rgba(53, 185, 75, 0.25);
+}
+
+
+/* =========================================================
+   FEATURE CARDS
+   ========================================================= */
+
+.feature-card {
+  position: absolute;
+
+  z-index: 8;
+
+  width: 300px;
+
+  min-height: 185px;
+
+  padding: 22px 22px;
+
+  background: rgba(255, 255, 255, 0.99);
+
+  border: 1px solid #e6ece7;
+
+  border-radius: 17px;
+
+  box-shadow:
+    0 25px 55px rgba(25, 38, 29, 0.09),
+    0 7px 16px rgba(25, 38, 29, 0.04);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+/* =========================================================
+   CARD POSITIONS
+   ========================================================= */
+
+.developer-card {
+  top: 55px;
+  left: 3%;
+
+  transform: rotate(-4deg);
+}
+
+.mock-card {
+  top: 65px;
+  right: 3%;
+
+  transform: rotate(4deg);
+}
+
+.interview-card {
+  bottom: 48px;
+  left: 3.5%;
+
+  transform: rotate(3deg);
+}
+
+.resume-card {
+  bottom: 52px;
+  right: 3.5%;
+
+  transform: rotate(-3deg);
+}
+
+
+/* =========================================================
+   CARD HOVER
+   ========================================================= */
+
+.developer-card:hover {
+  transform:
+    translateY(-8px)
+    rotate(-2deg);
+}
+
+.mock-card:hover {
+  transform:
+    translateY(-8px)
+    rotate(2deg);
+}
+
+.interview-card:hover {
+  transform:
+    translateY(-8px)
+    rotate(1deg);
+}
+
+.resume-card:hover {
+  transform:
+    translateY(-8px)
+    rotate(-1deg);
+}
+
+.feature-card:hover {
+  box-shadow:
+    0 30px 60px rgba(25, 38, 29, 0.13),
+    0 8px 18px rgba(25, 38, 29, 0.06);
+}
+
+
+/* =========================================================
+   CARD HEADER
+   ========================================================= */
+
+.feature-card-header {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 17px;
+}
+
+
+/* =========================================================
+   LARGE VIDEO / EMOJI AREA
+   ========================================================= */
+
+.feature-icon {
+  width: 52px;
+  height: 52px;
+
+  flex-shrink: 0;
+
+  display: grid;
+
+  place-items: center;
+
+  overflow: hidden;
+
+  border-radius: 13px;
+
+  background: #eaf9e8;
+
+  color: #35ae49;
+
+  box-shadow:
+    0 5px 12px rgba(53, 185, 75, 0.08);
+}
+
+.feature-icon video {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  border-radius: 13px;
+}
+
+
+/* =========================================================
+   CARD TITLE
+   ========================================================= */
+
+.feature-title {
+  flex: 1;
+
+  color: #181b19;
+
+  font-size: 14px;
+
+  font-weight: 800;
+
+  line-height: 1.25;
+}
+
+
+/* =========================================================
+   CARD ARROW
+   ========================================================= */
+
+.feature-arrow {
+  color: #a2a8a3;
+
+  font-size: 25px;
+
+  line-height: 1;
+}
+
+
+/* =========================================================
+   CARD CONTENT
+   ========================================================= */
+
+.feature-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 9px;
+}
+
+.feature-item {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 9px;
+
+  color: #313733;
+
+  font-size: 12px;
+
+  line-height: 1.4;
+}
+
+.check {
+  flex-shrink: 0;
+
+  color: #38b84d;
+
+  font-size: 13px;
+
+  font-weight: 900;
+}
+
+
+/* =========================================================
+   SMALL CODE VISUAL
+   ========================================================= */
+
+.code-card {
+  position: absolute;
+
+  z-index: 5;
+
+  left: 8%;
+
+  top: 285px;
+
+  width: 185px;
+
+  padding: 13px;
+
+  background: #151718;
+
+  border-radius: 10px;
+
+  transform: rotate(-7deg);
+
+  box-shadow:
+    0 20px 35px rgba(15, 20, 17, 0.16);
+}
+
+.code-dots {
+  display: flex;
+
+  gap: 5px;
+
+  margin-bottom: 10px;
+}
+
+.code-dots span {
+  width: 6px;
+  height: 6px;
+
+  border-radius: 50%;
+
+  background: #46bd55;
+}
+
+.code-card pre {
+  margin: 0;
+
+  color: #91e89c;
+
+  font-family:
+    "SFMono-Regular",
+    Consolas,
+    "Liberation Mono",
+    monospace;
+
+  font-size: 7.5px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   IMPORTANT:
+   CALENDAR / PROGRESS CARD REMOVED
+   ========================================================= */
+
+
+/* =========================================================
+   LARGE DESKTOP
+   ========================================================= */
+
+@media (min-width: 1500px) {
+
+  .navbar {
+    width: calc(100% - 110px);
+  }
+
+  .feature-card {
+    width: 315px;
+
+    min-height: 190px;
+  }
+
+  .developer-card {
+    left: 5%;
+  }
+
+  .mock-card {
+    right: 5%;
+  }
+
+  .interview-card {
+    left: 5.5%;
+  }
+
+  .resume-card {
+    right: 5.5%;
+  }
+
+  .code-card {
+    left: 10%;
+  }
+}
+
+
+/* =========================================================
+   LAPTOP
+   ========================================================= */
+
+@media (max-width: 1200px) {
+
+  .navbar {
+    width: calc(100% - 50px);
+
+    padding: 0 25px;
+  }
+
+  .hero {
+    padding: 0 20px;
+  }
+
+  .feature-card {
+    width: 270px;
+
+    min-height: 175px;
+
+    padding: 19px;
+  }
+
+  .developer-card {
+    left: 1%;
+  }
+
+  .mock-card {
+    right: 1%;
+  }
+
+  .interview-card {
+    left: 1.5%;
+  }
+
+  .resume-card {
+    right: 1.5%;
+  }
+
+  .code-card {
+    left: 3%;
+  }
+
+  .hero-content h1 {
+    font-size: 54px;
+  }
+
+  .feature-icon {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 950px) {
+
+  .landing-header {
+    min-height: 820px;
+  }
+
+  .navbar {
+    width: calc(100% - 36px);
+
+    height: 72px;
+
+    margin-top: 12px;
+
+    padding: 0 20px;
+  }
+
+  .brand {
+    width: 155px;
+  }
+
+  .brand-logo {
+    width: 150px;
+  }
+
+  .hero {
+    min-height: 748px;
+  }
+
+  .feature-card {
+    width: 220px;
+
+    min-height: 160px;
+
+    padding: 16px;
+  }
+
+  .developer-card {
+    top: 55px;
+    left: 0.5%;
+  }
+
+  .mock-card {
+    top: 65px;
+    right: 0.5%;
+  }
+
+  .interview-card {
+    bottom: 45px;
+    left: 1%;
+  }
+
+  .resume-card {
+    bottom: 50px;
+    right: 1%;
+  }
+
+  .code-card {
+    left: 1.5%;
+
+    width: 145px;
+  }
+
+  .hero-content {
+    width: 500px;
+  }
+
+  .hero-content h1 {
+    font-size: 47px;
+  }
+
+  .feature-icon {
+    width: 43px;
+    height: 43px;
+  }
+
+  .feature-title {
+    font-size: 12px;
+  }
+
+  .feature-item {
+    font-size: 10px;
+  }
+}
+
+
+/* =========================================================
+   SMALL TABLET
+   ========================================================= */
+
+@media (max-width: 780px) {
+
+  .landing-header {
+    min-height: auto;
+  }
+
+  .navbar {
+    position: sticky;
+
+    top: 10px;
+
+    width: calc(100% - 24px);
+
+    height: 68px;
+
+    margin-top: 10px;
+
+    padding: 0 17px;
+
+    border-radius: 14px;
+  }
+
+  .brand {
+    width: 140px;
+    height: 45px;
+  }
+
+  .brand-logo {
+    width: 138px;
+    height: 43px;
+  }
+
+  .nav-actions {
+    gap: 16px;
+  }
+
+  .hero {
+    min-height: 900px;
+
+    padding: 145px 20px 40px;
+
+    display: block;
+  }
+
+  .hero-content {
+    width: 100%;
+
+    margin: 0 auto;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(42px, 7vw, 52px);
+  }
+
+  /* Hide code visual on smaller screens */
+  .code-card {
+    display: none;
+  }
+
+
+  /* =====================================================
+     MOBILE FEATURE CARDS
+     ===================================================== */
+
+  .feature-card {
+    width: 215px;
+
+    min-height: 155px;
+
+    padding: 15px;
+  }
+
+  .developer-card {
+    top: 25px;
+    left: 2%;
+
+    transform: rotate(-3deg);
+  }
+
+  .mock-card {
+    top: 25px;
+    right: 2%;
+
+    transform: rotate(3deg);
+  }
+
+  .interview-card {
+    bottom: 30px;
+    left: 2%;
+
+    transform: rotate(2deg);
+  }
+
+  .resume-card {
+    bottom: 30px;
+    right: 2%;
+
+    transform: rotate(-2deg);
+  }
+
+  .feature-icon {
+    width: 42px;
+    height: 42px;
+  }
+
+  .feature-title {
+    font-size: 10px;
+  }
+
+  .feature-item {
+    font-size: 9px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 620px) {
+
+  .navbar {
+    width: calc(100% - 20px);
+
+    height: 64px;
+
+    top: 8px;
+
+    padding: 0 14px;
+
+    border-radius: 13px;
+  }
+
+  .brand {
+    width: 125px;
+    height: 42px;
+  }
+
+  .brand-logo {
+    width: 123px;
+    height: 40px;
+  }
+
+  .nav-actions {
+    gap: 10px;
+  }
+
+  .signin-btn {
+    font-size: 11px;
+  }
+
+  .get-started-btn {
+    padding: 9px 13px;
+
+    font-size: 10px;
+  }
+
+
+  /* =====================================================
+     HERO
+     ===================================================== */
+
+  .hero {
+    min-height: 930px;
+
+    padding: 145px 14px 30px;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(35px, 10vw, 45px);
+
+    line-height: 1.08;
+  }
+
+  .hero-content p {
+    max-width: 420px;
+
+    margin-top: 18px;
+
+    font-size: 13px;
+  }
+
+
+  /* =====================================================
+     CARDS
+     ===================================================== */
+
+  .feature-card {
+    width: calc(50% - 10px);
+
+    min-height: 150px;
+
+    padding: 13px;
+
+    border-radius: 11px;
+  }
+
+  .developer-card {
+    top: 20px;
+    left: 7px;
+
+    transform: rotate(-3deg);
+  }
+
+  .mock-card {
+    top: 20px;
+    right: 7px;
+
+    transform: rotate(3deg);
+  }
+
+  .interview-card {
+    bottom: 20px;
+    left: 7px;
+
+    transform: rotate(2deg);
+  }
+
+  .resume-card {
+    bottom: 20px;
+    right: 7px;
+
+    transform: rotate(-2deg);
+  }
+
+
+  .feature-card-header {
+    gap: 6px;
+
+    margin-bottom: 10px;
+  }
+
+  .feature-icon {
+    width: 34px;
+    height: 34px;
+
+    border-radius: 9px;
+  }
+
+  .feature-title {
+    font-size: 9px;
+  }
+
+  .feature-arrow {
+    font-size: 17px;
+  }
+
+  .feature-list {
+    gap: 5px;
+  }
+
+  .feature-item {
+    gap: 5px;
+
+    font-size: 8px;
+  }
+
+  .check {
+    font-size: 9px;
+  }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+  .navbar {
+    width: calc(100% - 14px);
+
+    padding: 0 11px;
+  }
+
+  .brand-logo {
+    width: 110px;
+  }
+
+  .get-started-btn {
+    padding: 8px 10px;
+  }
+
+  .hero {
+    min-height: 910px;
+
+    padding-left: 9px;
+    padding-right: 9px;
+  }
+
+  .hero-content h1 {
+    font-size: 34px;
+  }
+
+  .feature-card {
+    width: calc(50% - 7px);
+
+    min-height: 138px;
+
+    padding: 10px;
+  }
+
+  .developer-card {
+    left: 5px;
+  }
+
+  .mock-card {
+    right: 5px;
+  }
+
+  .interview-card {
+    left: 5px;
+  }
+
+  .resume-card {
+    right: 5px;
+  }
+
+  .feature-icon {
+    width: 31px;
+    height: 31px;
+  }
+
+  .feature-title {
+    font-size: 8px;
+  }
+
+  .feature-item {
+    font-size: 7.3px;
+  }
+}

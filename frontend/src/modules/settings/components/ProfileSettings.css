@@ -1,0 +1,409 @@
+/* =====================================================
+   PrepNova - Profile Settings
+===================================================== */
+
+.profile-settings {
+  width: 100%;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.profile-settings-header {
+  margin-bottom: 28px;
+}
+
+.settings-section-label {
+  display: block;
+  margin-bottom: 7px;
+
+  color: #16805a;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 1.4px;
+}
+
+.profile-settings-header h2 {
+  margin: 0;
+
+  color: #17211f;
+
+  font-size: 22px;
+  font-weight: 750;
+}
+
+.profile-settings-header p {
+  margin: 7px 0 0;
+
+  color: #74817d;
+
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+
+/* =====================================================
+   PROFILE IMAGE SECTION
+===================================================== */
+
+.profile-image-section {
+  display: flex;
+  align-items: center;
+
+  gap: 24px;
+
+  padding: 22px;
+
+  margin-bottom: 28px;
+
+  background: #f8fbf9;
+
+  border: 1px solid #e2ebe7;
+
+  border-radius: 14px;
+}
+
+
+/* =====================================================
+   PROFILE IMAGE
+===================================================== */
+
+.profile-image-preview {
+  width: 104px;
+  height: 104px;
+
+  flex-shrink: 0;
+
+  overflow: hidden;
+
+  border-radius: 50%;
+
+  background: #e5f3ec;
+
+  border: 4px solid #ffffff;
+
+  box-shadow:
+    0 4px 15px rgba(20, 88, 64, 0.1);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-image-preview img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: contain;
+}
+
+.profile-image-placeholder {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #16805a;
+
+  font-size: 28px;
+}
+
+
+/* =====================================================
+   IMAGE CONTENT
+===================================================== */
+
+.profile-image-content {
+  min-width: 0;
+}
+
+.profile-image-content h3 {
+  margin: 0 0 5px;
+
+  color: #17211f;
+
+  font-size: 16px;
+  font-weight: 750;
+}
+
+.profile-image-content p {
+  margin: 0 0 14px;
+
+  color: #788681;
+
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+
+/* =====================================================
+   IMAGE ACTIONS
+===================================================== */
+
+.profile-image-actions {
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+
+  margin-bottom: 9px;
+}
+
+.profile-upload-button,
+.profile-remove-image-button {
+  min-height: 38px;
+
+  padding: 0 14px;
+
+  border-radius: 8px;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.profile-upload-button {
+  border: 1px solid #16805a;
+
+  background: #16805a;
+
+  color: #ffffff;
+}
+
+.profile-upload-button:hover:not(:disabled) {
+  background: #126b4b;
+
+  transform: translateY(-1px);
+}
+
+.profile-remove-image-button {
+  border: 1px solid #e1caca;
+
+  background: #ffffff;
+
+  color: #b34b4b;
+}
+
+.profile-remove-image-button:hover:not(:disabled) {
+  background: #fff6f6;
+
+  border-color: #d9b4b4;
+}
+
+.profile-upload-button:disabled,
+.profile-remove-image-button:disabled {
+  opacity: 0.55;
+
+  cursor: not-allowed;
+}
+
+.profile-image-content small {
+  color: #89948f;
+
+  font-size: 11px;
+}
+
+.profile-hidden-file-input {
+  display: none;
+}
+
+
+/* =====================================================
+   PROFILE FORM
+===================================================== */
+
+.profile-settings-form {
+  width: 100%;
+}
+
+.profile-form-row {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 18px;
+}
+
+.profile-form-group {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+
+  margin-bottom: 19px;
+}
+
+.profile-form-group label {
+  color: #34423e;
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.profile-form-group input {
+  width: 100%;
+
+  min-height: 45px;
+
+  padding: 0 13px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #dce6e2;
+
+  border-radius: 9px;
+
+  outline: none;
+
+  background: #ffffff;
+
+  color: #17211f;
+
+  font-size: 14px;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.profile-form-group input::placeholder {
+  color: #a2ada9;
+}
+
+.profile-form-group input:focus {
+  border-color: #72b89d;
+
+  box-shadow:
+    0 0 0 3px rgba(22, 128, 90, 0.08);
+}
+
+
+/* =====================================================
+   FORM FOOTER
+===================================================== */
+
+.profile-form-footer {
+  display: flex;
+
+  justify-content: flex-end;
+
+  padding-top: 7px;
+
+  margin-top: 4px;
+
+  border-top: 1px solid #edf1ef;
+}
+
+.profile-save-button {
+  min-height: 42px;
+
+  padding: 0 18px;
+
+  border: none;
+
+  border-radius: 9px;
+
+  background: #16805a;
+
+  color: #ffffff;
+
+  font-size: 13px;
+  font-weight: 750;
+
+  cursor: pointer;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.profile-save-button:hover:not(:disabled) {
+  background: #126b4b;
+
+  transform: translateY(-1px);
+}
+
+.profile-save-button:disabled {
+  opacity: 0.6;
+
+  cursor: not-allowed;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 700px) {
+
+  .profile-form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+
+  .profile-image-section {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+
+  .profile-image-actions {
+    flex-wrap: wrap;
+  }
+
+
+  .profile-form-footer {
+    justify-content: stretch;
+  }
+
+
+  .profile-save-button {
+    width: 100%;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+
+  .profile-image-section {
+    padding: 17px;
+  }
+
+  .profile-image-preview {
+    width: 88px;
+    height: 88px;
+  }
+
+}

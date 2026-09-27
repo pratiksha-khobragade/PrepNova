@@ -1,0 +1,609 @@
+/* =========================================================
+   SUBMISSION HISTORY PAGE
+   PrepNova Theme
+========================================================= */
+
+.submission-history-page {
+  min-height: 100vh;
+  padding: 32px;
+  background: #f7faf7;
+  color: #172019;
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.submission-history-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 30px;
+}
+
+.submission-history-title-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.submission-back-btn {
+  width: fit-content;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  border: none;
+  background: transparent;
+
+  color: #35b94b;
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+  padding: 0;
+
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.submission-back-btn:hover {
+  color: #26943a;
+  transform: translateX(-2px);
+}
+
+.submission-history-header h1 {
+  margin: 0 0 7px;
+
+  color: #172019;
+
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 750;
+  letter-spacing: -0.6px;
+}
+
+.submission-history-header p {
+  margin: 0;
+
+  color: #69756d;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   TOTAL SUBMISSIONS
+========================================================= */
+
+.submission-total {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  padding: 11px 16px;
+
+  background: #ffffff;
+
+  border: 1px solid #dfe8e1;
+  border-radius: 11px;
+
+  color: #4e5b53;
+
+  font-size: 14px;
+  font-weight: 650;
+
+  box-shadow: 0 3px 12px rgba(30, 60, 38, 0.05);
+}
+
+.submission-total svg {
+  color: #35b94b;
+}
+
+
+/* =========================================================
+   STATE CARDS
+========================================================= */
+
+.submission-state-card {
+  min-height: 280px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 40px;
+
+  background: #ffffff;
+
+  border: 1px solid #dfe8e1;
+  border-radius: 17px;
+
+  box-shadow: 0 7px 28px rgba(30, 60, 38, 0.055);
+
+  box-sizing: border-box;
+}
+
+.submission-state-card > svg {
+  margin-bottom: 17px;
+
+  font-size: 38px;
+  color: #9aa79e;
+}
+
+.submission-state-card h3 {
+  margin: 0 0 8px;
+
+  color: #172019;
+
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.submission-state-card p {
+  max-width: 500px;
+
+  margin: 0;
+
+  color: #69756d;
+
+  line-height: 1.65;
+  font-size: 14px;
+}
+
+.submission-state-card button {
+  margin-top: 21px;
+
+  border: none;
+  border-radius: 9px;
+
+  padding: 10px 18px;
+
+  background: #35b94b;
+  color: #ffffff;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.submission-state-card button:hover {
+  background: #2fa642;
+  transform: translateY(-1px);
+
+  box-shadow: 0 5px 14px rgba(53, 185, 75, 0.2);
+}
+
+
+/* =========================================================
+   ERROR STATE
+========================================================= */
+
+.submission-error-card {
+  border-color: #f0dada;
+}
+
+.submission-error-card > svg {
+  color: #dc4c4c;
+}
+
+.submission-error-card h3 {
+  color: #b33131;
+}
+
+
+/* =========================================================
+   LOADER
+========================================================= */
+
+.submission-loader {
+  width: 34px;
+  height: 34px;
+
+  margin-bottom: 17px;
+
+  border: 3px solid #dceee0;
+  border-top-color: #35b94b;
+
+  border-radius: 50%;
+
+  animation: submission-spin 0.8s linear infinite;
+}
+
+@keyframes submission-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* =========================================================
+   SUBMISSION LIST
+========================================================= */
+
+.submission-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+
+/* =========================================================
+   SUBMISSION CARD
+========================================================= */
+
+.submission-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  padding: 20px;
+
+  background: #ffffff;
+
+  border: 1px solid #dfe8e1;
+  border-radius: 15px;
+
+  box-shadow: 0 4px 17px rgba(30, 60, 38, 0.045);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.submission-card:hover {
+  transform: translateY(-2px);
+
+  border-color: #b9dcbf;
+
+  box-shadow: 0 9px 26px rgba(30, 60, 38, 0.08);
+}
+
+
+/* =========================================================
+   STATUS ICON
+========================================================= */
+
+.submission-status-icon {
+  width: 44px;
+  height: 44px;
+
+  flex: 0 0 44px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  font-size: 21px;
+}
+
+.submission-status-icon.accepted {
+  color: #23963a;
+  background: #e5f7e8;
+}
+
+.submission-status-icon.failed {
+  color: #d23f3f;
+  background: #fdeaea;
+}
+
+
+/* =========================================================
+   MAIN CONTENT
+========================================================= */
+
+.submission-main {
+  flex: 1;
+  min-width: 0;
+}
+
+.submission-problem-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  margin-bottom: 10px;
+}
+
+.submission-problem-row h3 {
+  margin: 0;
+
+  color: #172019;
+
+  font-size: 17px;
+  font-weight: 700;
+
+  line-height: 1.4;
+}
+
+
+/* =========================================================
+   DIFFICULTY
+========================================================= */
+
+.submission-difficulty {
+  padding: 4px 10px;
+
+  border-radius: 999px;
+
+  font-size: 11px;
+  font-weight: 750;
+
+  line-height: 1.3;
+}
+
+.submission-difficulty.easy {
+  background: #e3f7e7;
+  color: #218c37;
+}
+
+.submission-difficulty.medium {
+  background: #fff4d8;
+  color: #ad7410;
+}
+
+.submission-difficulty.hard {
+  background: #fde9e9;
+  color: #b73737;
+}
+
+
+/* =========================================================
+   META INFORMATION
+========================================================= */
+
+.submission-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 8px 18px;
+
+  color: #6b776f;
+
+  font-size: 13px;
+}
+
+.submission-meta strong {
+  color: #46534b;
+  font-weight: 650;
+}
+
+.submission-date {
+  margin-top: 9px;
+
+  color: #98a39c;
+
+  font-size: 12px;
+}
+
+
+/* =========================================================
+   ACTION
+========================================================= */
+
+.submission-action {
+  flex-shrink: 0;
+}
+
+.submission-action button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #bfe2c5;
+  border-radius: 9px;
+
+  padding: 9px 14px;
+
+  background: #eef9f0;
+  color: #2c9d40;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.submission-action button:hover {
+  background: #e2f5e5;
+  border-color: #9ed2a7;
+
+  color: #218a34;
+
+  transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   PAGINATION
+========================================================= */
+
+.submission-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 18px;
+
+  margin-top: 26px;
+}
+
+.submission-pagination span {
+  color: #4e5b53;
+
+  font-size: 14px;
+  font-weight: 650;
+}
+
+.submission-pagination button {
+  min-width: 82px;
+
+  border: 1px solid #d5e4d8;
+  border-radius: 8px;
+
+  padding: 9px 14px;
+
+  background: #ffffff;
+  color: #319d42;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.submission-pagination button:hover:not(:disabled) {
+  background: #eef9f0;
+  border-color: #b8dbbe;
+}
+
+.submission-pagination button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+
+/* =========================================================
+   RESPONSIVE - TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+  .submission-history-page {
+    padding: 24px;
+  }
+
+  .submission-history-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .submission-card {
+    align-items: flex-start;
+  }
+
+  .submission-action {
+    margin-left: auto;
+  }
+}
+
+
+/* =========================================================
+   RESPONSIVE - MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+  .submission-history-page {
+    padding: 16px;
+  }
+
+  .submission-history-header {
+    margin-bottom: 22px;
+  }
+
+  .submission-history-header h1 {
+    font-size: 25px;
+  }
+
+  .submission-history-header p {
+    font-size: 14px;
+  }
+
+  .submission-total {
+    width: 100%;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+
+  .submission-card {
+    flex-direction: column;
+    align-items: stretch;
+
+    padding: 16px;
+  }
+
+  .submission-status-icon {
+    width: 40px;
+    height: 40px;
+
+    flex-basis: 40px;
+  }
+
+  .submission-action {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .submission-action button {
+    width: 100%;
+  }
+
+  .submission-meta {
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 6px;
+  }
+
+  .submission-pagination {
+    gap: 10px;
+  }
+
+  .submission-pagination button {
+    min-width: 72px;
+  }
+}
+
+
+/* =========================================================
+   RESPONSIVE - SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+  .submission-history-page {
+    padding: 14px;
+  }
+
+  .submission-history-header h1 {
+    font-size: 23px;
+  }
+
+  .submission-state-card {
+    padding: 28px 18px;
+  }
+
+  .submission-problem-row h3 {
+    font-size: 16px;
+  }
+
+  .submission-pagination {
+    gap: 8px;
+  }
+}

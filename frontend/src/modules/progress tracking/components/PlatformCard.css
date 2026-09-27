@@ -1,0 +1,321 @@
+/* =========================================================
+   PLATFORM CARD
+========================================================= */
+
+.platform-card {
+  background: #ffffff;
+  border: 1px solid #e7ebe8;
+  border-radius: 16px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  min-height: 210px;
+  box-sizing: border-box;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.platform-card:hover {
+  transform: translateY(-3px);
+  border-color: #cde8d5;
+  box-shadow: 0 10px 28px rgba(20, 83, 45, 0.08);
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.platform-card-header {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.platform-card-icon {
+  width: 46px;
+  height: 46px;
+  min-width: 46px;
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff;
+  font-size: 19px;
+
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.08);
+}
+
+.platform-card-title {
+  min-width: 0;
+}
+
+.platform-card-title h3 {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+  color: #17251c;
+  line-height: 1.3;
+}
+
+.platform-card-title span {
+  display: block;
+  margin-top: 3px;
+
+  font-size: 13px;
+  color: #758078;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+/* =========================================================
+   EMPTY / NOT CONNECTED STATE
+========================================================= */
+
+.platform-card-empty {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  padding: 10px 0 4px;
+}
+
+.platform-card-empty p {
+  margin: 0 0 15px;
+
+  font-size: 13px;
+  color: #8a948d;
+}
+
+
+/* =========================================================
+   CONNECT BUTTON
+========================================================= */
+
+.platform-card-connect-btn {
+  border: none;
+  border-radius: 9px;
+
+  background: #16a34a;
+  color: #ffffff;
+
+  padding: 9px 18px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.platform-card-connect-btn:hover {
+  background: #15803d;
+  transform: translateY(-1px);
+  box-shadow: 0 5px 12px rgba(22, 163, 74, 0.2);
+}
+
+.platform-card-connect-btn:active {
+  transform: translateY(0);
+}
+
+.platform-card-connect-btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+
+/* =========================================================
+   STATS
+========================================================= */
+
+.platform-card-stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+
+  flex: 1;
+}
+
+.platform-card-stat {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background: #f5fbf6;
+  border: 1px solid #e5f1e7;
+  border-radius: 10px;
+
+  padding: 11px 7px;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.platform-card-stat:hover {
+  background: #eef9f1;
+  border-color: #d5ead9;
+}
+
+.platform-card-stat-value {
+  font-size: 17px;
+  font-weight: 700;
+  color: #14532d;
+  line-height: 1.2;
+}
+
+.platform-card-stat-label {
+  margin-top: 4px;
+
+  font-size: 10.5px;
+  font-weight: 500;
+  color: #78837c;
+
+  text-align: center;
+  line-height: 1.25;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.platform-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+
+  border-top: 1px solid #edf0ee;
+  padding-top: 13px;
+}
+
+.platform-card-synced {
+  min-width: 0;
+
+  font-size: 10.5px;
+  color: #9aa39d;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+/* =========================================================
+   ACTION BUTTONS
+========================================================= */
+
+.platform-card-actions {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  flex-shrink: 0;
+}
+
+.platform-card-actions button {
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #e2e7e3;
+  border-radius: 8px;
+
+  background: #f7f9f7;
+  color: #526058;
+
+  font-size: 12px;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.platform-card-actions button:hover {
+  background: #eaf7ed;
+  border-color: #cce5d2;
+  color: #15803d;
+  transform: translateY(-1px);
+}
+
+.platform-card-actions button:active {
+  transform: translateY(0);
+}
+
+.platform-card-actions button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+  .platform-card {
+    padding: 19px;
+  }
+}
+
+@media (max-width: 600px) {
+  .platform-card {
+    padding: 18px;
+    border-radius: 14px;
+  }
+
+  .platform-card-icon {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    font-size: 17px;
+  }
+
+  .platform-card-title h3 {
+    font-size: 16px;
+  }
+
+  .platform-card-footer {
+    align-items: flex-start;
+  }
+
+  .platform-card-synced {
+    max-width: 65%;
+    white-space: normal;
+  }
+}

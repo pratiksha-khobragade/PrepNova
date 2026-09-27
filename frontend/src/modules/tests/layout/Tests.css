@@ -1,0 +1,535 @@
+/* =========================================================
+   TESTS PAGE
+   PrepNova Dashboard Theme
+   ========================================================= */
+
+   .tests-page {
+  font-family: inherit;
+}
+
+.tests-page {
+  min-height: 100vh;
+  background: #f6f9f7;
+  color: #17201a;
+}
+
+
+/* =========================================================
+   MAIN AREA
+   ========================================================= */
+
+.tests-main {
+  width: calc(100% - 245px);
+  min-height: 100vh;
+  margin-left: 245px;
+}
+
+
+/* =========================================================
+   TOP NAVBAR
+   ========================================================= */
+
+.tests-topbar {
+  height: 76px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 30px;
+
+  background: #ffffff;
+
+  border-bottom: 1px solid #e8eee9;
+}
+
+
+/* =========================================================
+   SEARCH
+   ========================================================= */
+
+.tests-search {
+  width: 350px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 0 13px;
+
+  background: #f7f9f8;
+
+  border: 1px solid #e4eae5;
+
+  border-radius: 10px;
+
+  color: #8a938d;
+}
+
+.tests-search svg {
+  font-size: 14px;
+}
+
+.tests-search input {
+  flex: 1;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  font-size: 13px;
+
+  color: #1f2937;
+}
+
+.tests-search input::placeholder {
+  color: #9aa29d;
+}
+
+.tests-search small {
+  padding: 4px 7px;
+
+  border: 1px solid #e1e6e2;
+
+  border-radius: 5px;
+
+  background: #ffffff;
+
+  font-size: 10px;
+
+  color: #8a928c;
+}
+
+
+/* =========================================================
+   TOP RIGHT ACTIONS
+   ========================================================= */
+
+.tests-top-actions {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+}
+
+
+/* =========================================================
+   NAVBAR ICON BUTTONS
+   ========================================================= */
+
+.tests-top-icon {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #e4e9e5;
+
+  border-radius: 9px;
+
+  background: #ffffff;
+
+  color: #626b65;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.tests-top-icon:hover {
+  color: #16833b;
+
+  background: #f1f8f3;
+
+  border-color: #c8dfce;
+}
+
+
+/* =========================================================
+   USER PROFILE
+   ========================================================= */
+
+.tests-user {
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+
+  margin-left: 8px;
+  padding-left: 14px;
+
+  border-left: 1px solid #e7ebe8;
+}
+
+.tests-user-avatar {
+  width: 37px;
+  height: 37px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #dff2e4;
+
+  color: #16833b;
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.tests-user-details {
+  display: flex;
+  flex-direction: column;
+
+  gap: 2px;
+}
+
+.tests-user-details strong {
+  font-size: 13px;
+
+  color: #1f2937;
+}
+
+.tests-user-details span {
+  font-size: 11px;
+
+  color: #8a938d;
+}
+
+.tests-user-arrow {
+  font-size: 12px;
+
+  color: #8a938d;
+}
+
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+.tests-content {
+  padding: 38px 38px 50px;
+
+  max-width: 1450px;
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   PAGE HEADING
+   ========================================================= */
+
+.tests-heading {
+  margin-bottom: 30px;
+}
+
+.tests-eyebrow {
+  margin: 0 0 8px;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.4px;
+
+  color: #16833b;
+}
+
+.tests-heading h1 {
+  margin: 0;
+
+  font-size: 28px;
+
+  line-height: 1.25;
+
+  font-weight: 700;
+
+  letter-spacing: -0.4px;
+
+  color: #17201a;
+}
+
+
+/* =========================================================
+   TEST CARDS GRID
+   ========================================================= */
+
+.tests-options-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 22px;
+}
+
+
+/* =========================================================
+   TEST CARD
+   ========================================================= */
+
+.test-option-card {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 390px;
+
+  padding: 25px;
+
+  background: #ffffff;
+
+  border: 1px solid #e3e9e4;
+
+  border-radius: 15px;
+
+  box-shadow: 0 3px 14px rgba(22, 50, 30, 0.035);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.test-option-card:hover {
+  transform: translateY(-3px);
+
+  border-color: #c8ddcd;
+
+  box-shadow: 0 10px 25px rgba(22, 50, 30, 0.07);
+}
+
+
+/* =========================================================
+   CARD HEADER
+   ========================================================= */
+
+.test-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+/* =========================================================
+   CARD ICON
+   ========================================================= */
+
+.test-option-icon {
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  background: #e6f5ea;
+
+  color: #16833b;
+
+  font-size: 19px;
+}
+
+
+/* =========================================================
+   CARD BADGE
+   ========================================================= */
+
+.test-badge {
+  padding: 6px 9px;
+
+  border-radius: 20px;
+
+  background: #edf8ef;
+
+  color: #16833b;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.8px;
+}
+
+
+/* =========================================================
+   CARD CONTENT
+   ========================================================= */
+
+.test-card-content {
+  flex: 1;
+
+  padding-top: 23px;
+}
+
+.test-card-content h3 {
+  margin: 0;
+
+  font-size: 22px;
+
+  font-weight: 700;
+
+  letter-spacing: -0.3px;
+
+  color: #1a231d;
+}
+
+.test-card-content > p {
+  margin: 10px 0 21px;
+
+  font-size: 13px;
+
+  line-height: 1.65;
+
+  color: #78817b;
+}
+
+
+/* =========================================================
+   FEATURES
+   ========================================================= */
+
+.test-features {
+  display: flex;
+  flex-direction: column;
+
+  gap: 11px;
+}
+
+.test-features div {
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+
+  font-size: 12.5px;
+
+  color: #4e5851;
+}
+
+.test-features svg {
+  flex-shrink: 0;
+
+  font-size: 13px;
+
+  color: #16833b;
+}
+
+
+/* =========================================================
+   START BUTTON
+   ========================================================= */
+
+.test-start-button {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 22px;
+
+  padding: 12px 15px;
+
+  border: none;
+
+  border-radius: 9px;
+
+  background: #16833b;
+
+  color: #ffffff;
+
+  font-size: 12.5px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.test-start-button:hover {
+  background: #126d31;
+}
+
+.test-start-button svg {
+  font-size: 12px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1100px) {
+  .tests-search {
+    width: 280px;
+  }
+
+  .tests-content {
+    padding: 32px 28px 45px;
+  }
+}
+
+
+@media (max-width: 950px) {
+  .tests-main {
+    width: 100%;
+
+    margin-left: 0;
+  }
+
+  .tests-options-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media (max-width: 700px) {
+  .tests-topbar {
+    height: auto;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    padding: 14px 18px;
+  }
+
+  .tests-search {
+    width: 100%;
+
+    order: 3;
+  }
+
+  .tests-top-actions {
+    margin-left: auto;
+  }
+
+  .tests-user-details,
+  .tests-user-arrow {
+    display: none;
+  }
+
+  .tests-content {
+    padding: 27px 18px 40px;
+  }
+
+  .tests-heading h1 {
+    font-size: 25px;
+  }
+
+  .test-option-card {
+    min-height: auto;
+
+    padding: 21px;
+  }
+}

@@ -1,0 +1,237 @@
+/* =========================================
+   PREPNOVA FOOTER
+========================================= */
+
+.footer {
+  width: 100%;
+  background: #111315;
+  color: #ffffff;
+}
+
+
+/* =========================================
+   MAIN FOOTER
+========================================= */
+
+.footer-container {
+  width: min(1200px, 92%);
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr 0.8fr;
+  gap: 70px;
+
+  padding: 75px 0 65px;
+}
+
+
+/* =========================================
+   FOOTER COLUMN
+========================================= */
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-column h3 {
+  margin: 0 0 25px;
+
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+
+  color: #35b94b;
+}
+
+
+/* =========================================
+   LOGO BLOCK
+========================================= */
+
+.footer-brand {
+  align-items: flex-start;
+}
+
+.footer-logo-block {
+  width: 190px;
+  height: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  padding: 10px 16px;
+
+  background: #ffffff;
+  border-radius: 12px;
+
+  text-decoration: none;
+
+  box-sizing: border-box;
+}
+
+.footer-logo {
+  width: 155px;
+  max-width: 100%;
+  height: auto;
+
+  display: block;
+  object-fit: contain;
+}
+
+
+/* =========================================
+   TAGLINE
+========================================= */
+
+.footer-tagline {
+  margin: 20px 0 0;
+
+  font-size: 15px;
+  line-height: 1.7;
+  font-weight: 400;
+
+  color: #aeb4b1;
+}
+
+
+/* =========================================
+   FOOTER LINKS
+========================================= */
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.footer-links a {
+  width: fit-content;
+
+  color: #c7ccc9;
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 400;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #35b94b;
+  transform: translateX(3px);
+}
+
+
+/* =========================================
+   COPYRIGHT
+========================================= */
+
+.footer-bottom {
+  width: min(1200px, 92%);
+  margin: 0 auto;
+
+  border-top: 1px solid #292d2b;
+
+  padding: 24px 0;
+}
+
+.footer-bottom p {
+  margin: 0;
+
+  font-size: 13px;
+  color: #777d7a;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+  .footer-container {
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 45px;
+
+    padding: 60px 0 50px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+  .footer-container {
+    width: 88%;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 40px 30px;
+
+    padding: 50px 0 45px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+
+  .footer-logo-block {
+    width: 180px;
+    height: 65px;
+  }
+
+  .footer-logo {
+    width: 145px;
+  }
+
+  .footer-column h3 {
+    margin-bottom: 20px;
+    font-size: 12px;
+  }
+
+  .footer-links {
+    gap: 12px;
+  }
+
+  .footer-links a {
+    font-size: 13px;
+  }
+
+  .footer-tagline {
+    font-size: 14px;
+  }
+
+  .footer-bottom {
+    width: 88%;
+    padding: 20px 0;
+  }
+
+  .footer-bottom p {
+    font-size: 12px;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .footer-brand {
+    grid-column: auto;
+  }
+}

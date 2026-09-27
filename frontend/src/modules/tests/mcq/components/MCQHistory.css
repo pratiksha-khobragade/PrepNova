@@ -1,0 +1,677 @@
+/* =========================================================
+   MCQ HISTORY
+   PrepNova - DSA Theme
+========================================================= */
+
+.mcq-history-page {
+  min-height: 100vh;
+  background: #f6f8f9;
+  color: #17211f;
+  padding: 28px;
+}
+
+.mcq-history-container {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.mcq-history-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.mcq-history-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 9px;
+  color: #7a8985;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.mcq-history-breadcrumb svg {
+  color: #a3afab;
+  font-size: 9px;
+}
+
+.mcq-history-breadcrumb strong {
+  color: #167653;
+}
+
+.mcq-history-header h1 {
+  margin: 0 0 6px;
+  color: #17211f;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.mcq-history-header p {
+  margin: 0;
+  color: #687873;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.mcq-history-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.mcq-history-primary-btn,
+.mcq-history-secondary-btn {
+  min-height: 38px;
+  padding: 0 14px;
+  border-radius: 7px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.mcq-history-primary-btn {
+  border: 1px solid #167653;
+  background: #167653;
+  color: #ffffff;
+}
+
+.mcq-history-primary-btn:hover {
+  background: #126348;
+  border-color: #126348;
+}
+
+.mcq-history-secondary-btn {
+  border: 1px solid #d5e1dc;
+  background: #ffffff;
+  color: #52635d;
+}
+
+.mcq-history-secondary-btn:hover {
+  color: #167653;
+  border-color: #b8d8cc;
+  background: #eef8f4;
+}
+
+/* =========================================================
+   SUMMARY
+========================================================= */
+
+.mcq-history-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.mcq-history-summary-card {
+  background: #ffffff;
+  border: 1px solid #dfe7e4;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.mcq-history-summary-icon {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  border-radius: 7px;
+  background: #eef8f4;
+  color: #167653;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.mcq-history-summary-card span {
+  display: block;
+  margin-bottom: 3px;
+  color: #7a8985;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.mcq-history-summary-card strong {
+  color: #263631;
+  font-size: 18px;
+}
+
+/* =========================================================
+   HISTORY LIST
+========================================================= */
+
+.mcq-history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* =========================================================
+   HISTORY CARD
+========================================================= */
+
+.mcq-history-card {
+  background: #ffffff;
+  border: 1px solid #dfe7e4;
+  border-radius: 11px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px rgba(20, 45, 38, 0.03);
+}
+
+.mcq-history-card-header {
+  min-height: 66px;
+  padding: 13px 16px;
+  border-bottom: 1px solid #e7ecea;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.mcq-history-card-title {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.mcq-history-card-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 7px;
+  background: #eef8f4;
+  color: #167653;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.mcq-history-card-title span {
+  display: block;
+  margin-bottom: 2px;
+  color: #899691;
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+.mcq-history-card-title h2 {
+  margin: 0;
+  color: #25342f;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.mcq-history-status {
+  min-height: 27px;
+  padding: 0 9px;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.mcq-history-status.completed {
+  background: #eaf7f1;
+  color: #167653;
+}
+
+.mcq-history-status.auto {
+  background: #fff6df;
+  color: #9a6500;
+}
+
+.mcq-history-status.progress {
+  background: #f2f5f4;
+  color: #687873;
+}
+
+/* =========================================================
+   CARD META
+========================================================= */
+
+.mcq-history-card-meta {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-bottom: 1px solid #edf1f0;
+}
+
+.mcq-history-card-meta > div {
+  min-width: 0;
+  padding: 12px 16px;
+}
+
+.mcq-history-card-meta > div + div {
+  border-left: 1px solid #edf1f0;
+}
+
+.mcq-history-card-meta span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 4px;
+  color: #87948f;
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.mcq-history-card-meta span svg {
+  color: #167653;
+  font-size: 9px;
+}
+
+.mcq-history-card-meta strong {
+  display: block;
+  color: #394943;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* =========================================================
+   PERFORMANCE
+========================================================= */
+
+.mcq-history-performance {
+  padding: 14px 16px;
+  display: grid;
+  grid-template-columns: 120px minmax(120px, 1fr) auto;
+  align-items: center;
+  gap: 18px;
+  border-bottom: 1px solid #edf1f0;
+}
+
+.mcq-history-score {
+  display: flex;
+  align-items: baseline;
+  gap: 7px;
+}
+
+.mcq-history-score > span {
+  color: #87948f;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.mcq-history-score strong {
+  color: #25342f;
+  font-size: 18px;
+}
+
+.mcq-history-score strong small {
+  color: #899691;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.mcq-history-score b {
+  padding: 4px 7px;
+  border-radius: 5px;
+  background: #eef8f4;
+  color: #167653;
+  font-size: 10px;
+}
+
+.mcq-history-progress {
+  min-width: 0;
+}
+
+.mcq-history-progress-track {
+  height: 7px;
+  background: #edf2ef;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.mcq-history-progress-fill {
+  height: 100%;
+  min-width: 0;
+  background: #167653;
+  border-radius: inherit;
+  transition: width 0.3s ease;
+}
+
+.mcq-history-review-btn {
+  min-height: 34px;
+  padding: 0 11px;
+  border: 1px solid #c8dcd3;
+  border-radius: 7px;
+  background: #ffffff;
+  color: #167653;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.mcq-history-review-btn:hover {
+  background: #eef8f4;
+  border-color: #9fc6b6;
+}
+
+/* =========================================================
+   STATISTICS
+========================================================= */
+
+.mcq-history-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.mcq-history-stats > div {
+  min-height: 45px;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.mcq-history-stats > div + div {
+  border-left: 1px solid #edf1f0;
+}
+
+.mcq-history-stats svg {
+  font-size: 13px;
+}
+
+.mcq-history-stats span {
+  color: #778580;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.mcq-history-stats strong {
+  margin-left: auto;
+  color: #35443f;
+  font-size: 12px;
+}
+
+.mcq-history-stats .correct svg {
+  color: #167653;
+}
+
+.mcq-history-stats .correct strong {
+  color: #167653;
+}
+
+.mcq-history-stats .wrong svg {
+  color: #b33b3b;
+}
+
+.mcq-history-stats .wrong strong {
+  color: #b33b3b;
+}
+
+.mcq-history-stats .skipped svg {
+  color: #71807b;
+}
+
+.mcq-history-stats .skipped strong {
+  color: #71807b;
+}
+
+/* =========================================================
+   EMPTY STATE
+========================================================= */
+
+.mcq-history-empty {
+  background: #ffffff;
+  border: 1px solid #dfe7e4;
+  border-radius: 12px;
+  padding: 55px 25px;
+  text-align: center;
+}
+
+.mcq-history-empty-icon {
+  width: 58px;
+  height: 58px;
+  margin: 0 auto 15px;
+  border-radius: 10px;
+  background: #eef8f4;
+  color: #167653;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.mcq-history-empty h2 {
+  margin: 0 0 7px;
+  color: #263631;
+  font-size: 19px;
+}
+
+.mcq-history-empty p {
+  width: min(440px, 100%);
+  margin: 0 auto 20px;
+  color: #788681;
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+/* =========================================================
+   ERROR
+========================================================= */
+
+.mcq-history-error {
+  background: #ffffff;
+  border: 1px solid #dfe7e4;
+  border-radius: 12px;
+  padding: 55px 25px;
+  text-align: center;
+}
+
+.mcq-history-error-icon {
+  width: 58px;
+  height: 58px;
+  margin: 0 auto 15px;
+  border-radius: 10px;
+  background: #fff6df;
+  color: #9a6500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.mcq-history-error h2 {
+  margin: 0 0 7px;
+  color: #263631;
+  font-size: 19px;
+}
+
+.mcq-history-error p {
+  width: min(500px, 100%);
+  margin: 0 auto 20px;
+  color: #788681;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+/* =========================================================
+   LOADING
+========================================================= */
+
+.mcq-history-loading {
+  min-height: calc(100vh - 56px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.mcq-history-spinner {
+  width: 34px;
+  height: 34px;
+  border: 3px solid #dce8e3;
+  border-top-color: #167653;
+  border-radius: 50%;
+  animation: mcqHistorySpin 0.8s linear infinite;
+  margin-bottom: 16px;
+}
+
+@keyframes mcqHistorySpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.mcq-history-loading h2 {
+  margin: 0 0 6px;
+  color: #263631;
+  font-size: 18px;
+}
+
+.mcq-history-loading p {
+  margin: 0;
+  color: #788681;
+  font-size: 12px;
+}
+
+/* =========================================================
+   RESPONSIVE - TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+  .mcq-history-card-meta {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mcq-history-card-meta > div:nth-child(3) {
+    border-left: none;
+    border-top: 1px solid #edf1f0;
+  }
+
+  .mcq-history-card-meta > div:nth-child(4) {
+    border-top: 1px solid #edf1f0;
+  }
+
+  .mcq-history-performance {
+    grid-template-columns: 120px minmax(0, 1fr);
+  }
+
+  .mcq-history-review-btn {
+    grid-column: 1 / -1;
+    justify-self: flex-start;
+  }
+}
+
+/* =========================================================
+   RESPONSIVE - SMALL TABLET
+========================================================= */
+
+@media (max-width: 700px) {
+  .mcq-history-page {
+    padding: 20px;
+  }
+
+  .mcq-history-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .mcq-history-header-actions {
+    width: 100%;
+  }
+
+  .mcq-history-header-actions button {
+    flex: 1;
+  }
+
+  .mcq-history-summary {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================================================
+   RESPONSIVE - MOBILE
+========================================================= */
+
+@media (max-width: 550px) {
+  .mcq-history-page {
+    padding: 14px;
+  }
+
+  .mcq-history-header h1 {
+    font-size: 23px;
+  }
+
+  .mcq-history-header-actions {
+    flex-direction: column;
+  }
+
+  .mcq-history-header-actions button {
+    width: 100%;
+  }
+
+  .mcq-history-card-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .mcq-history-status {
+    align-self: flex-start;
+  }
+
+  .mcq-history-card-meta {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .mcq-history-card-meta > div {
+    padding: 10px 12px;
+  }
+
+  .mcq-history-performance {
+    padding: 13px;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .mcq-history-review-btn {
+    width: 100%;
+  }
+
+  .mcq-history-stats > div {
+    padding: 8px 10px;
+  }
+
+  .mcq-history-stats span {
+    display: none;
+  }
+
+  .mcq-history-empty,
+  .mcq-history-error {
+    padding: 40px 18px;
+  }
+}
