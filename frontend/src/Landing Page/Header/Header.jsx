@@ -2,13 +2,28 @@ import React from "react";
 import "./Header.css";
 
 // =====================================================
+// IMAGES
+// =====================================================
+
+import logo from "../../../images/logo.png";
+
+// =====================================================
+// VIDEOS
+// =====================================================
+
+import dashboardVideo from "../../../videos/dashboard.mp4";
+import testVideo from "../../../videos/test.mp4";
+import onlineInterviewVideo from "../../../videos/online-interview.mp4";
+import cvVideo from "../../../videos/cv.mp4";
+
+// =====================================================
 // FEATURE CARDS
 // =====================================================
 
 const featureCards = [
   {
     position: "developer-card",
-    video: "/videos/dashboard.mp4",
+    video: dashboardVideo,
     title: "Developer Dashboard",
     items: [
       "GitHub activity",
@@ -19,7 +34,7 @@ const featureCards = [
   },
   {
     position: "interview-card",
-    video: "/videos/test.mp4",
+    video: testVideo,
     title: "Interview Prep",
     items: [
       "DSA questions",
@@ -31,7 +46,7 @@ const featureCards = [
   },
   {
     position: "mock-card",
-    video: "/videos/online-interview.mp4",
+    video: onlineInterviewVideo,
     title: "AI Mock Interview",
     items: [
       "Role & experience selection",
@@ -42,7 +57,7 @@ const featureCards = [
   },
   {
     position: "resume-card",
-    video: "/videos/cv.mp4",
+    video: cvVideo,
     title: "Resume Analyzer",
     items: [
       "Upload resume",
@@ -53,7 +68,6 @@ const featureCards = [
   },
 ];
 
-
 // =====================================================
 // FEATURE CARD
 // =====================================================
@@ -61,12 +75,10 @@ const featureCards = [
 function FeatureCard({ card }) {
   return (
     <div className={`feature-card ${card.position}`}>
-
       <div className="feature-card-header">
 
         {/* Video used as the card icon */}
         <div className="feature-icon">
-
           <video
             src={card.video}
             autoPlay
@@ -75,7 +87,6 @@ function FeatureCard({ card }) {
             playsInline
             aria-hidden="true"
           />
-
         </div>
 
         <span className="feature-title">
@@ -85,19 +96,14 @@ function FeatureCard({ card }) {
         <span className="feature-arrow">
           ›
         </span>
-
       </div>
 
-
       <div className="feature-list">
-
         {card.items.map((item) => (
-
           <div
             className="feature-item"
             key={item}
           >
-
             <span className="check">
               ✓
             </span>
@@ -105,24 +111,18 @@ function FeatureCard({ card }) {
             <span>
               {item}
             </span>
-
           </div>
-
         ))}
-
       </div>
-
     </div>
   );
 }
-
 
 // =====================================================
 // LANDING PAGE HEADER
 // =====================================================
 
 export default function Header() {
-
   return (
     <header className="landing-header">
 
@@ -137,15 +137,13 @@ export default function Header() {
           className="brand"
           aria-label="PrepNova home"
         >
-
+          {/* Imported logo so Vite handles production path */}
           <img
-            src="/images/logo.png"
+            src={logo}
             alt="PrepNova"
             className="brand-logo"
           />
-
         </a>
-
 
         <div className="nav-actions">
 
@@ -159,7 +157,6 @@ export default function Header() {
             Sign up
           </button>
 
-
           <button
             type="button"
             className="get-started-btn"
@@ -171,9 +168,7 @@ export default function Header() {
           </button>
 
         </div>
-
       </nav>
-
 
       {/* =================================================
           HERO SECTION
@@ -186,14 +181,11 @@ export default function Header() {
         ================================================= */}
 
         {featureCards.map((card) => (
-
           <FeatureCard
             card={card}
             key={card.title}
           />
-
         ))}
-
 
         {/* =================================================
             SMALL CODING VISUAL
@@ -203,21 +195,16 @@ export default function Header() {
           className="code-card"
           aria-hidden="true"
         >
-
           <div className="code-dots">
-
             <span />
             <span />
             <span />
-
           </div>
 
           <pre>{`function solve(arr) {
   return arr.map(x => x * 2);
 }`}</pre>
-
         </div>
-
 
         {/* =================================================
             CENTER HERO CONTENT
@@ -226,18 +213,14 @@ export default function Header() {
         <div className="hero-content">
 
           <div className="eyebrow">
-
             <span>
               ✦
             </span>
 
             AI-POWERED INTERVIEW PREPARATION
-
           </div>
 
-
           <h1>
-
             Prepare smarter.
             <br />
 
@@ -246,15 +229,12 @@ export default function Header() {
             <span>
               confidence.
             </span>
-
           </h1>
-
 
           <p>
             Everything you need to master technical, behavioral, and
             AI-powered mock interviews — all in one place.
           </p>
-
 
           <div className="hero-buttons">
 
@@ -269,14 +249,11 @@ export default function Header() {
             </button>
 
           </div>
-
         </div>
-
 
         {/* Decorative elements intentionally removed */}
 
       </section>
-
     </header>
   );
 }
