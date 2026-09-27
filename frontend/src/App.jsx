@@ -6,6 +6,8 @@ import {
   useNavigate,
 } from "react-router-dom";
 
+import { GoogleOAuthProvider } from "@react-oauth/google";
+
 // =========================================================
 // Landing Page
 // =========================================================
@@ -26,8 +28,6 @@ import Signup from "./auth/Signup";
 // =========================================================
 
 import Dashboard from "./dashboard/Dashboard";
-
-// Dashboard Sidebar
 import DashboardSidebar from "./dashboard/layout/DashboardSidebar";
 
 // =========================================================
@@ -79,7 +79,6 @@ import ProgressTracking from "./modules/progress tracking/ProgressTracking";
 // =========================================================
 
 import Settings from "./modules/settings/Settings";
-
 
 // =========================================================
 // AI INTERVIEW FLOW
@@ -229,7 +228,6 @@ const InterviewFlow = () => {
   );
 };
 
-
 // =========================================================
 // PROGRESS TRACKING LAYOUT
 // Sidebar + Progress Tracking
@@ -243,7 +241,6 @@ const ProgressTrackingLayout = () => {
     </>
   );
 };
-
 
 // =========================================================
 // SETTINGS LAYOUT
@@ -259,164 +256,157 @@ const SettingsLayout = () => {
   );
 };
 
-
 // =========================================================
 // MAIN APP
 // =========================================================
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
+    <GoogleOAuthProvider
+      clientId={import.meta.env.VITE_GOOGLE_CLIENT_ID}
+    >
+      <BrowserRouter>
+        <Routes>
 
-        {/* =================================================
-            LANDING PAGE
-            Header + Features + Footer
-        ================================================= */}
+          {/* =================================================
+              LANDING PAGE
+          ================================================= */}
 
-        <Route
-          path="/"
-          element={
-            <>
-              <Header />
-              <Features />
-              <Footer />
-            </>
-          }
-        />
+          <Route
+            path="/"
+            element={
+              <>
+                <Header />
+                <Features />
+                <Footer />
+              </>
+            }
+          />
 
+          {/* =================================================
+              AUTHENTICATION
+          ================================================= */}
 
-        {/* =================================================
-            AUTHENTICATION
-        ================================================= */}
+          <Route
+            path="/login"
+            element={<Login />}
+          />
 
-        <Route
-          path="/login"
-          element={<Login />}
-        />
+          <Route
+            path="/signup"
+            element={<Signup />}
+          />
 
-        <Route
-          path="/signup"
-          element={<Signup />}
-        />
+          {/* =================================================
+              DASHBOARD
+          ================================================= */}
 
+          <Route
+            path="/dashboard"
+            element={<Dashboard />}
+          />
 
-        {/* =================================================
-            DASHBOARD
-        ================================================= */}
+          {/* =================================================
+              RESUME ANALYZER
+          ================================================= */}
 
-        <Route
-          path="/dashboard"
-          element={<Dashboard />}
-        />
+          <Route
+            path="/resume-analyzer"
+            element={<ResumeAnalyzer />}
+          />
 
+          {/* =================================================
+              TESTS
+          ================================================= */}
 
-        {/* =================================================
-            RESUME ANALYZER
-        ================================================= */}
+          <Route
+            path="/tests"
+            element={<Tests />}
+          />
 
-        <Route
-          path="/resume-analyzer"
-          element={<ResumeAnalyzer />}
-        />
+          {/* =================================================
+              DSA
+          ================================================= */}
 
+          <Route
+            path="/tests/dsa"
+            element={<DSAHome />}
+          />
 
-        {/* =================================================
-            TESTS
-        ================================================= */}
+          <Route
+            path="/tests/dsa/problem/:problemId"
+            element={<DSAProblem />}
+          />
 
-        <Route
-          path="/tests"
-          element={<Tests />}
-        />
+          <Route
+            path="/tests/dsa/submissions"
+            element={<SubmissionHistory />}
+          />
 
+          {/* =================================================
+              MCQ
+          ================================================= */}
 
-        {/* =================================================
-            DSA
-        ================================================= */}
+          <Route
+            path="/tests/mcq"
+            element={<MCQHome />}
+          />
 
-        <Route
-          path="/tests/dsa"
-          element={<DSAHome />}
-        />
+          <Route
+            path="/tests/mcq/dashboard"
+            element={<MCQDashboard />}
+          />
 
-        <Route
-          path="/tests/dsa/problem/:problemId"
-          element={<DSAProblem />}
-        />
+          <Route
+            path="/tests/mcq/test/:attemptId"
+            element={<MCQTest />}
+          />
 
-        <Route
-          path="/tests/dsa/submissions"
-          element={<SubmissionHistory />}
-        />
+          <Route
+            path="/tests/mcq/result/:attemptId"
+            element={<MCQResult />}
+          />
 
+          <Route
+            path="/tests/mcq/history"
+            element={<MCQHistory />}
+          />
 
-        {/* =================================================
-            MCQ
-        ================================================= */}
+          {/* =================================================
+              AI INTERVIEW
+          ================================================= */}
 
-        <Route
-          path="/tests/mcq"
-          element={<MCQHome />}
-        />
+          <Route
+            path="/interview"
+            element={<InterviewFlow />}
+          />
 
-        <Route
-          path="/tests/mcq/dashboard"
-          element={<MCQDashboard />}
-        />
+          {/* =================================================
+              PROGRESS TRACKING
+          ================================================= */}
 
-        <Route
-          path="/tests/mcq/test/:attemptId"
-          element={<MCQTest />}
-        />
+          <Route
+            path="/progress"
+            element={<ProgressTrackingLayout />}
+          />
 
-        <Route
-          path="/tests/mcq/result/:attemptId"
-          element={<MCQResult />}
-        />
+          <Route
+            path="/performance"
+            element={<ProgressTrackingLayout />}
+          />
 
-        <Route
-          path="/tests/mcq/history"
-          element={<MCQHistory />}
-        />
+          {/* =================================================
+              SETTINGS
+          ================================================= */}
 
+          <Route
+            path="/settings"
+            element={<SettingsLayout />}
+          />
 
-        {/* =================================================
-            AI INTERVIEW
-        ================================================= */}
-
-        <Route
-          path="/interview"
-          element={<InterviewFlow />}
-        />
-
-
-        {/* =================================================
-            PROGRESS TRACKING
-        ================================================= */}
-
-        <Route
-          path="/progress"
-          element={<ProgressTrackingLayout />}
-        />
-
-        <Route
-          path="/performance"
-          element={<ProgressTrackingLayout />}
-        />
-
-
-        {/* =================================================
-            SETTINGS
-        ================================================= */}
-
-        <Route
-          path="/settings"
-          element={<SettingsLayout />}
-        />
-
-      </Routes>
-    </BrowserRouter>
+        </Routes>
+      </BrowserRouter>
+    </GoogleOAuthProvider>
   );
 }
 
